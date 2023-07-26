@@ -8,3 +8,77 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
                 o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
 2023-07-22 17:59:02.554 [background-preinit] WARN 
                 o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-07-25 17:45:16.275 [background-preinit] WARN 
+                o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-07-25 18:11:25.090 [background-preinit] WARN 
+                o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-07-25 18:14:21.005 [background-preinit] WARN 
+                o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-07-25 18:44:01.875 [background-preinit] WARN 
+                o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-07-25 18:47:11.457 [rebel-change-detector-thread] WARN 
+                o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.gzhu.funai.mapper]' package. Please check your configuration.
+2023-07-25 22:44:13.693 [scheduling-1] WARN 
+                com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@35b0c7f9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-26 00:44:13.683 [scheduling-1] WARN 
+                com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@46b6abc7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-26 00:44:18.711 [scheduling-1] WARN 
+                com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3c6fb6b5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-26 00:44:23.724 [scheduling-1] WARN 
+                com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5d9775d5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-26 00:44:28.737 [scheduling-1] WARN 
+                com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6ad73999 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-26 00:44:33.753 [scheduling-1] WARN 
+                com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@13f30a3d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-26 00:44:38.764 [scheduling-1] WARN 
+                com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@cf94736 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-26 00:44:43.784 [scheduling-1] WARN 
+                com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2c089a8e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-26 01:44:13.693 [scheduling-1] WARN 
+                com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4c2bbf91 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-26 01:44:18.698 [scheduling-1] WARN 
+                com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4ba75e93 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-26 02:44:13.677 [scheduling-1] WARN 
+                com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6365687d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-26 03:44:13.697 [scheduling-1] WARN 
+                com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1a0d50c7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-26 03:44:18.708 [scheduling-1] WARN 
+                com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@17ed0427 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-26 06:44:13.696 [scheduling-1] WARN 
+                com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4f92eb4a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-26 06:44:18.701 [scheduling-1] WARN 
+                com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@794a85a3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-26 06:44:23.718 [scheduling-1] WARN 
+                com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@e4fa0ea (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-26 07:44:13.676 [scheduling-1] WARN 
+                com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@73fe8211 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-26 07:44:18.679 [scheduling-1] WARN 
+                com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@42cb7ed4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-26 07:44:23.691 [scheduling-1] WARN 
+                com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@384aa248 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-26 08:34:24.397 [background-preinit] WARN 
+                o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-07-26 08:34:49.765 [main] WARN 
+                o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myWebMvcConfigurer': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userApiKeyServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userApiKeyMapper' defined in file [C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes\com\gzhu\funai\mapper\UserApiKeyMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2023-07-26 08:35:48.078 [background-preinit] WARN 
+                o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-07-26 08:37:25.088 [background-preinit] WARN 
+                o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-07-26 10:03:49.214 [background-preinit] WARN 
+                o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-07-26 10:04:22.411 [main] WARN 
+                o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myWebMvcConfigurer': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userApiKeyServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userApiKeyMapper' defined in file [C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes\com\gzhu\funai\mapper\UserApiKeyMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2023-07-26 10:18:09.227 [background-preinit] WARN 
+                o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-07-26 10:18:33.515 [main] WARN 
+                o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myWebMvcConfigurer': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userApiKeyServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userApiKeyMapper' defined in file [C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes\com\gzhu\funai\mapper\UserApiKeyMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2023-07-26 10:19:08.569 [background-preinit] WARN 
+                o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-07-26 10:20:05.553 [background-preinit] WARN 
+                o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath

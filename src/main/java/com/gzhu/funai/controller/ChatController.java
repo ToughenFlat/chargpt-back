@@ -2,6 +2,7 @@ package com.gzhu.funai.controller;
 
 import com.google.common.collect.ImmutableList;
 import com.gzhu.funai.api.baidu.constant.BaiDuConst;
+import com.gzhu.funai.api.openai.ChatGPTApi;
 import com.gzhu.funai.api.openai.enums.Role;
 import com.gzhu.funai.api.openai.req.ContextMessage;
 import com.gzhu.funai.entity.UserApiKeyEntity;
@@ -30,6 +31,7 @@ import okhttp3.*;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
@@ -38,6 +40,7 @@ import javax.validation.Valid;
 import java.io.IOException;
 import java.text.DateFormat;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -69,6 +72,19 @@ public class ChatController {
     private UserApiKeyService userApiKeyService;
     @Resource
     private ExpertChatHelper expertChatHelper;
+
+
+    @RequestMapping("/chat/test")
+    @ResponseBody
+    public String testChatGPT() {
+        ChatGPTResp resp = ChatGPTApi.sessionReq(
+                ChatGPTReq.builder().messages(Arrays.asList(new ContextMessage(Role.USER.name, "请问如何评价秦始皇?"))).build(),
+                "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");
+
+        assert resp != null;
+        System.out.println(resp.getChoices().get(0).getMessage().toString());
+        return resp.getChoices().get(0).getMessage().toString();
+    }
 
     /**
      * 调用openai的ChatGPT接口实现单论对话

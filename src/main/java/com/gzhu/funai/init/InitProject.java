@@ -20,7 +20,7 @@ public class InitProject implements ApplicationRunner {
                 ChatGPTReq.builder().messages(Arrays.asList(new ContextMessage(Role.USER.name, "请问如何评价秦始皇?"))).build(),
                 "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");
 
-        System.out.println(resp.getChoices().get(0).getMessage().toString());
+        //System.out.println(resp.getChoices().get(0).getMessage().toString());
         System.out.println("初始化项目");
     }
 }
