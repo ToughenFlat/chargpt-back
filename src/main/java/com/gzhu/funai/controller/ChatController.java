@@ -81,9 +81,11 @@ public class ChatController {
                 ChatGPTReq.builder().messages(Arrays.asList(new ContextMessage(Role.USER.name, "请问如何评价秦始皇?"))).build(),
                 "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");
 
-        assert resp != null;
-        System.out.println(resp.getChoices().get(0).getMessage().toString());
-        return resp.getChoices().get(0).getMessage().toString();
+        if (resp != null) {
+            System.out.println(resp.getChoices().get(0).getMessage().toString());
+            return resp.getChoices().get(0).getMessage().toString();
+        }
+        return "hello test success";
     }
 
     /**
