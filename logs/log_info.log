@@ -1082,3 +1082,565 @@ Error starting ApplicationContext. To display the conditions report re-run your 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2023-07-26 10:42:06.543 [SpringContextShutdownHook] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-26 14:53:00.290 [main] INFO 
+                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 12248 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+2023-07-26 14:53:00.292 [main] INFO 
+                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+2023-07-26 14:53:02.531 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-07-26 14:53:02.536 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-07-26 14:53:02.642 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66ms. Found 0 repository interfaces.
+2023-07-26 14:53:03.269 [main] INFO 
+                o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-26 14:53:04.168 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-07-26 14:53:04.191 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-26 14:53:04.192 [main] INFO 
+                org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-26 14:53:04.192 [main] INFO 
+                org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2023-07-26 14:53:04.396 [main] INFO 
+                o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-26 14:53:04.396 [main] INFO 
+                org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3999 ms
+2023-07-26 14:53:05.187 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-26 14:53:05.546 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-26 14:53:06.089 [main] INFO 
+                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+2023-07-26 14:53:06.091 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
+2023-07-26 14:53:07.864 [main] INFO 
+                s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-07-26 14:53:08.386 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-07-26 14:53:08.437 [main] INFO 
+                s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-07-26 14:53:08.471 [main] INFO 
+                s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-07-26 14:53:08.574 [main] INFO 
+                s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-07-26 14:53:08.754 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addSessionUsingPOST_1
+2023-07-26 14:53:08.868 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2023-07-26 14:53:08.870 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getSseEmitterUsingGET_1
+2023-07-26 14:53:08.943 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-07-26 14:53:08.994 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-26 14:53:09.000 [main] INFO 
+                com.gzhu.funai.FunAiApplication - Started FunAiApplication in 10.48 seconds (JVM running for 17.316)
+2023-07-26 14:53:30.837 [scheduling-1] INFO 
+                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-26 14:53:30.892 [scheduling-1] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-07-26 14:53:30.919 [scheduling-1] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
+2023-07-26 14:53:30.942 [scheduling-1] INFO 
+                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-26 14:54:13.532 [http-nio-8080-exec-1] INFO 
+                o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-26 14:54:13.532 [http-nio-8080-exec-1] INFO 
+                org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-26 14:54:13.541 [http-nio-8080-exec-1] INFO 
+                org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2023-07-26 14:54:13.574 [http-nio-8080-exec-1] INFO 
+                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/test 方法入参: 
+2023-07-26 14:54:13.634 [http-nio-8080-exec-1] INFO 
+                com.gzhu.funai.filter.ChannelFilter - ip127.0.0.1, 访问路径/chat/test完毕，耗时：71ms
+2023-07-26 14:54:13.707 [http-nio-8080-exec-4] INFO 
+                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/favicon.ico 方法入参: 
+2023-07-26 14:54:13.719 [http-nio-8080-exec-4] INFO 
+                com.gzhu.funai.filter.ChannelFilter - ip127.0.0.1, 访问路径/favicon.ico完毕，耗时：12ms
+2023-07-26 14:57:13.589 [http-nio-8080-exec-2] INFO 
+                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/test 方法入参: 
+2023-07-26 14:57:25.081 [http-nio-8080-exec-2] INFO 
+                com.gzhu.funai.filter.ChannelFilter - ip127.0.0.1, 访问路径/chat/test完毕，耗时：11492ms
+2023-07-26 14:57:25.111 [http-nio-8080-exec-3] INFO 
+                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/favicon.ico 方法入参: 
+2023-07-26 14:57:27.229 [http-nio-8080-exec-3] INFO 
+                com.gzhu.funai.filter.ChannelFilter - ip127.0.0.1, 访问路径/favicon.ico完毕，耗时：2118ms
+2023-07-26 14:58:14.761 [http-nio-8080-exec-8] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-07-26 14:58:14.792 [http-nio-8080-exec-8] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 0 repository interfaces.
+2023-07-26 14:58:14.802 [http-nio-8080-exec-8] INFO 
+                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/test 方法入参: 
+2023-07-26 14:58:25.241 [http-nio-8080-exec-8] INFO 
+                com.gzhu.funai.filter.ChannelFilter - ip127.0.0.1, 访问路径/chat/test完毕，耗时：10439ms
+2023-07-26 14:58:25.720 [http-nio-8080-exec-7] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-07-26 14:58:25.757 [http-nio-8080-exec-7] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37ms. Found 0 repository interfaces.
+2023-07-26 14:58:25.781 [http-nio-8080-exec-7] INFO 
+                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/favicon.ico 方法入参: 
+2023-07-26 14:58:29.970 [http-nio-8080-exec-7] INFO 
+                com.gzhu.funai.filter.ChannelFilter - ip127.0.0.1, 访问路径/favicon.ico完毕，耗时：4189ms
+2023-07-26 14:59:05.401 [SpringContextShutdownHook] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2023-07-26 14:59:05.411 [SpringContextShutdownHook] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'queueThreadPool'
+2023-07-26 14:59:05.413 [SpringContextShutdownHook] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-26 14:59:05.429 [SpringContextShutdownHook] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-26 14:59:13.589 [main] INFO 
+                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 14428 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+2023-07-26 14:59:13.589 [main] INFO 
+                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+2023-07-26 14:59:14.905 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-07-26 14:59:14.909 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-07-26 14:59:14.990 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52ms. Found 0 repository interfaces.
+2023-07-26 14:59:15.403 [main] INFO 
+                o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-26 14:59:16.019 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-07-26 14:59:16.041 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-26 14:59:16.041 [main] INFO 
+                org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-26 14:59:16.042 [main] INFO 
+                org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2023-07-26 14:59:16.207 [main] INFO 
+                o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-26 14:59:16.207 [main] INFO 
+                org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2547 ms
+2023-07-26 14:59:16.760 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-26 14:59:16.956 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-26 14:59:17.384 [main] INFO 
+                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+2023-07-26 14:59:17.386 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
+2023-07-26 14:59:18.272 [main] INFO 
+                s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-07-26 14:59:18.635 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-07-26 14:59:18.671 [main] INFO 
+                s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-07-26 14:59:18.691 [main] INFO 
+                s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-07-26 14:59:18.740 [main] INFO 
+                s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-07-26 14:59:18.912 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addSessionUsingPOST_1
+2023-07-26 14:59:19.024 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2023-07-26 14:59:19.026 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getSseEmitterUsingGET_1
+2023-07-26 14:59:19.098 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-07-26 14:59:19.124 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-26 14:59:19.129 [main] INFO 
+                com.gzhu.funai.FunAiApplication - Started FunAiApplication in 6.41 seconds (JVM running for 12.302)
+2023-07-26 14:59:29.078 [http-nio-8080-exec-1] INFO 
+                o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-26 14:59:29.078 [http-nio-8080-exec-1] INFO 
+                org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-26 14:59:29.086 [http-nio-8080-exec-1] INFO 
+                org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2023-07-26 14:59:29.105 [http-nio-8080-exec-1] INFO 
+                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/test 方法入参: 
+2023-07-26 14:59:40.741 [scheduling-1] INFO 
+                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-26 14:59:40.779 [scheduling-1] INFO 
+                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-26 15:01:58.928 [http-nio-8080-exec-2] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-07-26 15:01:58.967 [http-nio-8080-exec-2] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37ms. Found 0 repository interfaces.
+2023-07-26 15:01:59.120 [http-nio-8080-exec-2] INFO 
+                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/test 方法入参: 
+2023-07-26 15:01:59.149 [http-nio-8080-exec-2] INFO 
+                s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-07-26 15:02:52.107 [SpringContextShutdownHook] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2023-07-26 15:02:52.117 [SpringContextShutdownHook] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'queueThreadPool'
+2023-07-26 15:02:52.119 [SpringContextShutdownHook] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-26 15:02:52.143 [SpringContextShutdownHook] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-26 15:03:00.241 [main] INFO 
+                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 12448 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+2023-07-26 15:03:00.242 [main] INFO 
+                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+2023-07-26 15:03:01.554 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-07-26 15:03:01.558 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-07-26 15:03:01.632 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49ms. Found 0 repository interfaces.
+2023-07-26 15:03:02.039 [main] INFO 
+                o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-26 15:03:02.656 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-07-26 15:03:02.680 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-26 15:03:02.681 [main] INFO 
+                org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-26 15:03:02.682 [main] INFO 
+                org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2023-07-26 15:03:02.850 [main] INFO 
+                o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-26 15:03:02.850 [main] INFO 
+                org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2531 ms
+2023-07-26 15:03:03.333 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-26 15:03:03.531 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-26 15:03:03.986 [main] INFO 
+                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+2023-07-26 15:03:03.988 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
+2023-07-26 15:03:04.854 [main] INFO 
+                s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-07-26 15:03:05.240 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-07-26 15:03:05.275 [main] INFO 
+                s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-07-26 15:03:05.296 [main] INFO 
+                s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-07-26 15:03:05.343 [main] INFO 
+                s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-07-26 15:03:05.487 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addSessionUsingPOST_1
+2023-07-26 15:03:05.600 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2023-07-26 15:03:05.602 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getSseEmitterUsingGET_1
+2023-07-26 15:03:05.674 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-07-26 15:03:05.697 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-26 15:03:05.701 [main] INFO 
+                com.gzhu.funai.FunAiApplication - Started FunAiApplication in 6.468 seconds (JVM running for 12.057)
+2023-07-26 15:03:12.512 [http-nio-8080-exec-1] INFO 
+                o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-26 15:03:12.512 [http-nio-8080-exec-1] INFO 
+                org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-26 15:03:12.520 [http-nio-8080-exec-1] INFO 
+                org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2023-07-26 15:03:12.540 [http-nio-8080-exec-1] INFO 
+                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/test 方法入参: 
+2023-07-26 15:03:27.315 [scheduling-1] INFO 
+                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-26 15:03:27.350 [scheduling-1] INFO 
+                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-26 15:07:38.566 [SpringContextShutdownHook] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2023-07-26 15:07:38.573 [SpringContextShutdownHook] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'queueThreadPool'
+2023-07-26 15:07:38.574 [SpringContextShutdownHook] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-26 15:07:38.587 [SpringContextShutdownHook] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-26 15:07:48.223 [main] INFO 
+                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 14900 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+2023-07-26 15:07:48.225 [main] INFO 
+                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+2023-07-26 15:07:49.503 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-07-26 15:07:49.508 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-07-26 15:07:49.582 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49ms. Found 0 repository interfaces.
+2023-07-26 15:07:49.999 [main] INFO 
+                o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-26 15:07:50.844 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-07-26 15:07:50.968 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-26 15:07:50.972 [main] INFO 
+                org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-26 15:07:50.974 [main] INFO 
+                org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2023-07-26 15:07:51.325 [main] INFO 
+                o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-26 15:07:51.326 [main] INFO 
+                org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3035 ms
+2023-07-26 15:07:51.918 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-26 15:07:52.181 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-26 15:07:52.660 [main] INFO 
+                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+2023-07-26 15:07:52.661 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
+2023-07-26 15:07:53.548 [main] INFO 
+                s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-07-26 15:07:53.928 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-07-26 15:07:53.964 [main] INFO 
+                s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-07-26 15:07:53.984 [main] INFO 
+                s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-07-26 15:07:54.037 [main] INFO 
+                s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-07-26 15:07:54.183 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addSessionUsingPOST_1
+2023-07-26 15:07:54.297 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2023-07-26 15:07:54.299 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getSseEmitterUsingGET_1
+2023-07-26 15:07:54.373 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-07-26 15:07:54.397 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-26 15:07:54.402 [main] INFO 
+                com.gzhu.funai.FunAiApplication - Started FunAiApplication in 7.002 seconds (JVM running for 12.259)
+2023-07-26 15:08:12.942 [http-nio-8080-exec-1] INFO 
+                o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-26 15:08:12.942 [http-nio-8080-exec-1] INFO 
+                org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-26 15:08:12.949 [http-nio-8080-exec-1] INFO 
+                org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2023-07-26 15:08:12.968 [http-nio-8080-exec-1] INFO 
+                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/test 方法入参: 
+2023-07-26 15:08:17.123 [scheduling-1] INFO 
+                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-26 15:08:17.149 [scheduling-1] INFO 
+                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-26 15:09:41.201 [SpringContextShutdownHook] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2023-07-26 15:09:41.207 [SpringContextShutdownHook] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'queueThreadPool'
+2023-07-26 15:09:41.209 [SpringContextShutdownHook] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-26 15:09:41.227 [SpringContextShutdownHook] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-26 15:09:50.145 [main] INFO 
+                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 16424 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+2023-07-26 15:09:50.147 [main] INFO 
+                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+2023-07-26 15:09:51.450 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-07-26 15:09:51.454 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-07-26 15:09:51.532 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50ms. Found 0 repository interfaces.
+2023-07-26 15:09:51.939 [main] INFO 
+                o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-26 15:09:52.574 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-07-26 15:09:52.597 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-26 15:09:52.599 [main] INFO 
+                org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-26 15:09:52.600 [main] INFO 
+                org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2023-07-26 15:09:52.777 [main] INFO 
+                o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-26 15:09:52.777 [main] INFO 
+                org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2561 ms
+2023-07-26 15:09:53.269 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-26 15:09:53.470 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-26 15:09:53.925 [main] INFO 
+                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+2023-07-26 15:09:53.927 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
+2023-07-26 15:09:54.833 [main] INFO 
+                s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-07-26 15:09:55.199 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-07-26 15:09:55.234 [main] INFO 
+                s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-07-26 15:09:55.258 [main] INFO 
+                s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-07-26 15:09:55.329 [main] INFO 
+                s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-07-26 15:09:55.473 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addSessionUsingPOST_1
+2023-07-26 15:09:55.587 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2023-07-26 15:09:55.589 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getSseEmitterUsingGET_1
+2023-07-26 15:09:55.658 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-07-26 15:09:55.681 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-26 15:09:55.685 [main] INFO 
+                com.gzhu.funai.FunAiApplication - Started FunAiApplication in 6.359 seconds (JVM running for 11.786)
+2023-07-26 15:10:04.422 [http-nio-8080-exec-1] INFO 
+                o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-26 15:10:04.422 [http-nio-8080-exec-1] INFO 
+                org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-26 15:10:04.430 [http-nio-8080-exec-1] INFO 
+                org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2023-07-26 15:10:17.301 [scheduling-1] INFO 
+                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-26 15:10:17.336 [scheduling-1] INFO 
+                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-26 15:11:32.234 [http-nio-8080-exec-3] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-07-26 15:11:32.268 [http-nio-8080-exec-3] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32ms. Found 0 repository interfaces.
+2023-07-26 15:11:59.788 [SpringContextShutdownHook] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2023-07-26 15:11:59.794 [SpringContextShutdownHook] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'queueThreadPool'
+2023-07-26 15:11:59.796 [SpringContextShutdownHook] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-26 15:11:59.818 [SpringContextShutdownHook] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-26 15:12:07.376 [main] INFO 
+                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 13336 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+2023-07-26 15:12:07.378 [main] INFO 
+                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+2023-07-26 15:12:08.652 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-07-26 15:12:08.657 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-07-26 15:12:08.731 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49ms. Found 0 repository interfaces.
+2023-07-26 15:12:09.159 [main] INFO 
+                o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-26 15:12:09.759 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-07-26 15:12:09.780 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-26 15:12:09.781 [main] INFO 
+                org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-26 15:12:09.781 [main] INFO 
+                org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2023-07-26 15:12:09.945 [main] INFO 
+                o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-26 15:12:09.946 [main] INFO 
+                org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2495 ms
+2023-07-26 15:12:10.399 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-26 15:12:10.594 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-26 15:12:11.037 [main] INFO 
+                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+2023-07-26 15:12:11.039 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
+2023-07-26 15:12:11.926 [main] INFO 
+                s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-07-26 15:12:12.328 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-07-26 15:12:12.363 [main] INFO 
+                s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-07-26 15:12:12.383 [main] INFO 
+                s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-07-26 15:12:12.431 [main] INFO 
+                s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-07-26 15:12:12.578 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addSessionUsingPOST_1
+2023-07-26 15:12:12.693 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2023-07-26 15:12:12.695 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getSseEmitterUsingGET_1
+2023-07-26 15:12:12.768 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-07-26 15:12:12.791 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-26 15:12:12.796 [main] INFO 
+                com.gzhu.funai.FunAiApplication - Started FunAiApplication in 6.287 seconds (JVM running for 11.762)
+2023-07-26 15:12:34.402 [scheduling-1] INFO 
+                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-26 15:12:34.424 [scheduling-1] INFO 
+                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-26 15:12:34.574 [http-nio-8080-exec-1] INFO 
+                o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-26 15:12:34.574 [http-nio-8080-exec-1] INFO 
+                org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-26 15:12:34.581 [http-nio-8080-exec-1] INFO 
+                org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2023-07-26 15:24:23.390 [SpringContextShutdownHook] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2023-07-26 15:24:23.396 [SpringContextShutdownHook] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'queueThreadPool'
+2023-07-26 15:24:23.399 [SpringContextShutdownHook] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-26 15:24:23.422 [SpringContextShutdownHook] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-26 15:33:22.261 [main] INFO 
+                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 6112 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+2023-07-26 15:33:22.262 [main] INFO 
+                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+2023-07-26 15:33:23.542 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-07-26 15:33:23.547 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-07-26 15:33:23.623 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49ms. Found 0 repository interfaces.
+2023-07-26 15:33:24.029 [main] INFO 
+                o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-26 15:33:24.647 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-07-26 15:33:24.668 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-26 15:33:24.669 [main] INFO 
+                org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-26 15:33:24.669 [main] INFO 
+                org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2023-07-26 15:33:24.835 [main] INFO 
+                o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-26 15:33:24.836 [main] INFO 
+                org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2506 ms
+2023-07-26 15:33:25.292 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-26 15:33:26.945 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-26 15:33:27.396 [main] INFO 
+                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+2023-07-26 15:33:27.398 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
+2023-07-26 15:33:28.285 [main] INFO 
+                s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-07-26 15:33:28.652 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-07-26 15:33:28.687 [main] INFO 
+                s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-07-26 15:33:28.708 [main] INFO 
+                s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-07-26 15:33:28.757 [main] INFO 
+                s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-07-26 15:33:28.904 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addSessionUsingPOST_1
+2023-07-26 15:33:29.023 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2023-07-26 15:33:29.025 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getSseEmitterUsingGET_1
+2023-07-26 15:33:29.099 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-07-26 15:33:29.124 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-26 15:33:29.127 [main] INFO 
+                com.gzhu.funai.FunAiApplication - Started FunAiApplication in 7.688 seconds (JVM running for 12.944)
+2023-07-26 15:33:50.716 [scheduling-1] INFO 
+                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-26 15:33:51.140 [scheduling-1] INFO 
+                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-26 15:40:53.123 [http-nio-8080-exec-1] INFO 
+                o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-26 15:40:53.123 [http-nio-8080-exec-1] INFO 
+                org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-26 15:40:53.133 [http-nio-8080-exec-1] INFO 
+                org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2023-07-26 15:40:53.159 [http-nio-8080-exec-1] INFO 
+                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/test 方法入参: 
+2023-07-26 15:41:15.460 [scheduling-1] INFO 
+                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-26 15:44:54.007 [SpringContextShutdownHook] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2023-07-26 15:44:54.013 [SpringContextShutdownHook] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'queueThreadPool'
+2023-07-26 15:44:54.014 [SpringContextShutdownHook] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-26 15:44:54.030 [SpringContextShutdownHook] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

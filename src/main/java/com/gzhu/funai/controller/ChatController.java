@@ -75,17 +75,16 @@ public class ChatController {
 
 
     @RequestMapping("/chat/test")
-    @ResponseBody
-    public String testChatGPT() {
+    public ReturnResult testChatGPT() {
         ChatGPTResp resp = ChatGPTApi.sessionReq(
                 ChatGPTReq.builder().messages(Arrays.asList(new ContextMessage(Role.USER.name, "请问如何评价秦始皇?"))).build(),
                 "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");
 
         if (resp != null) {
             System.out.println(resp.getChoices().get(0).getMessage().toString());
-            return resp.getChoices().get(0).getMessage().toString();
+            return ReturnResult.ok().data(NAME_MESSAGE, resp.getMessage());
         }
-        return "hello test success";
+        return ReturnResult.ok().data(NAME_MESSAGE, "success");
     }
 
     /**
