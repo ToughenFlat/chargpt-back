@@ -602,3 +602,15 @@ java.lang.IllegalStateException: getWriter() has already been called for this re
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
+2023-07-27 09:43:39.210 [background-preinit] WARN 
+                o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-07-27 09:48:44.552 [HikariPool-1 housekeeper] WARN 
+                com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m57s104ms238µs).
+2023-07-27 09:48:49.632 [scheduling-1] WARN 
+                com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@13e72bee (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-27 09:48:54.649 [scheduling-1] WARN 
+                com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4375deec (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-27 09:48:59.672 [scheduling-1] WARN 
+                com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5a228dee (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-27 09:49:00.114 [scheduling-1] WARN 
+                o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.gzhu.funai.mapper]' package. Please check your configuration.
