@@ -78,7 +78,7 @@ public class ChatController {
     public ReturnResult testChatGPT() {
         ChatGPTResp resp = ChatGPTApi.sessionReq(
                 ChatGPTReq.builder().messages(Arrays.asList(new ContextMessage(Role.USER.name, "请问如何评价秦始皇?"))).build(),
-                "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");
+                "");
 
         if (resp != null) {
             System.out.println(resp.getChoices().get(0).getMessage().toString());
