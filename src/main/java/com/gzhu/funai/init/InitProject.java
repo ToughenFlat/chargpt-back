@@ -18,7 +18,7 @@ public class InitProject implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         ChatGPTResp resp = ChatGPTApi.sessionReq(
                 ChatGPTReq.builder().messages(Arrays.asList(new ContextMessage(Role.USER.name, "请问如何评价秦始皇?"))).build(),
-                "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");
+                "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");
         if (resp != null) {
             System.out.println(resp.getChoices().get(0).getMessage().toString());
         }
