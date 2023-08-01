@@ -17,7 +17,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 2023-07-25 18:44:01.875 [background-preinit] WARN 
                 o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
 2023-07-25 18:47:11.457 [rebel-change-detector-thread] WARN 
-                o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.gzhu.funai.mapper]' package. Please check your configuration.
+                o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.toughenflat.chatai.mapper]' package. Please check your configuration.
 2023-07-25 22:44:13.693 [scheduling-1] WARN 
                 com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@35b0c7f9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
 2023-07-26 00:44:13.683 [scheduling-1] WARN 
@@ -85,13 +85,13 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 2023-07-26 14:53:00.403 [background-preinit] WARN 
                 o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
 2023-07-26 14:53:30.862 [scheduling-1] WARN 
-                o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.gzhu.funai.mapper]' package. Please check your configuration.
+                o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.toughenflat.chatai.mapper]' package. Please check your configuration.
 2023-07-26 14:58:14.729 [http-nio-8080-exec-8] WARN 
-                o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.gzhu.funai.mapper]' package. Please check your configuration.
+                o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.toughenflat.chatai.mapper]' package. Please check your configuration.
 2023-07-26 14:58:25.668 [http-nio-8080-exec-7] WARN 
-                o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.gzhu.funai.mapper]' package. Please check your configuration.
+                o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.toughenflat.chatai.mapper]' package. Please check your configuration.
 2023-07-26 14:58:31.660 [http-nio-8080-exec-7] WARN 
-                o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.gzhu.funai.global.GlobalExceptionHandler#exception(Exception)
+                o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.toughenflat.chatai.global.GlobalExceptionHandler#exception(Exception)
 java.lang.IllegalStateException: getWriter() has already been called for this response
 	at org.apache.catalina.connector.Response.getOutputStream(Response.java:547)
 	at org.apache.catalina.connector.ResponseFacade.getOutputStream(ResponseFacade.java:210)
@@ -139,7 +139,7 @@ java.lang.IllegalStateException: getWriter() has already been called for this re
 2023-07-26 14:59:13.582 [background-preinit] WARN 
                 o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
 2023-07-26 15:00:12.587 [http-nio-8080-exec-1] WARN 
-                o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.gzhu.funai.global.GlobalExceptionHandler#exception(Exception)
+                o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.toughenflat.chatai.global.GlobalExceptionHandler#exception(Exception)
 java.lang.IllegalStateException: getWriter() has already been called for this response
 	at org.apache.catalina.connector.Response.getOutputStream(Response.java:547)
 	at org.apache.catalina.connector.ResponseFacade.getOutputStream(ResponseFacade.java:210)
@@ -168,10 +168,10 @@ java.lang.IllegalStateException: getWriter() has already been called for this re
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.gzhu.funai.filter.CorsFilter.doFilter(CorsFilter.java:41)
+	at com.toughenflat.chatai.filter.CorsFilter.doFilter(CorsFilter.java:41)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.gzhu.funai.filter.ChannelFilter.doFilter(ChannelFilter.java:26)
+	at com.toughenflat.chatai.filter.ChannelFilter.doFilter(ChannelFilter.java:26)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
@@ -204,9 +204,9 @@ java.lang.IllegalStateException: getWriter() has already been called for this re
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
 2023-07-26 15:01:58.927 [http-nio-8080-exec-2] WARN 
-                o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.gzhu.funai.mapper]' package. Please check your configuration.
+                o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.toughenflat.chatai.mapper]' package. Please check your configuration.
 2023-07-26 15:02:41.241 [http-nio-8080-exec-2] WARN 
-                o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.gzhu.funai.global.GlobalExceptionHandler#exception(Exception)
+                o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.toughenflat.chatai.global.GlobalExceptionHandler#exception(Exception)
 java.lang.IllegalStateException: getWriter() has already been called for this response
 	at org.apache.catalina.connector.Response.getOutputStream(Response.java:547)
 	at org.apache.catalina.connector.ResponseFacade.getOutputStream(ResponseFacade.java:210)
@@ -235,10 +235,10 @@ java.lang.IllegalStateException: getWriter() has already been called for this re
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.gzhu.funai.filter.CorsFilter.doFilter(CorsFilter.java:41)
+	at com.toughenflat.chatai.filter.CorsFilter.doFilter(CorsFilter.java:41)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.gzhu.funai.filter.ChannelFilter.doFilter(ChannelFilter.java:26)
+	at com.toughenflat.chatai.filter.ChannelFilter.doFilter(ChannelFilter.java:26)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
@@ -273,7 +273,7 @@ java.lang.IllegalStateException: getWriter() has already been called for this re
 2023-07-26 15:03:00.236 [background-preinit] WARN 
                 o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
 2023-07-26 15:03:46.605 [http-nio-8080-exec-1] WARN 
-                o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.gzhu.funai.global.GlobalExceptionHandler#exception(Exception)
+                o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.toughenflat.chatai.global.GlobalExceptionHandler#exception(Exception)
 java.lang.IllegalStateException: getWriter() has already been called for this response
 	at org.apache.catalina.connector.Response.getOutputStream(Response.java:547)
 	at org.apache.catalina.connector.ResponseFacade.getOutputStream(ResponseFacade.java:210)
@@ -302,10 +302,10 @@ java.lang.IllegalStateException: getWriter() has already been called for this re
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.gzhu.funai.filter.CorsFilter.doFilter(CorsFilter.java:41)
+	at com.toughenflat.chatai.filter.CorsFilter.doFilter(CorsFilter.java:41)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.gzhu.funai.filter.ChannelFilter.doFilter(ChannelFilter.java:26)
+	at com.toughenflat.chatai.filter.ChannelFilter.doFilter(ChannelFilter.java:26)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
@@ -340,7 +340,7 @@ java.lang.IllegalStateException: getWriter() has already been called for this re
 2023-07-26 15:07:48.225 [background-preinit] WARN 
                 o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
 2023-07-26 15:08:40.254 [http-nio-8080-exec-1] WARN 
-                o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.gzhu.funai.global.GlobalExceptionHandler#exception(Exception)
+                o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.toughenflat.chatai.global.GlobalExceptionHandler#exception(Exception)
 java.lang.IllegalStateException: getWriter() has already been called for this response
 	at org.apache.catalina.connector.Response.getOutputStream(Response.java:547)
 	at org.apache.catalina.connector.ResponseFacade.getOutputStream(ResponseFacade.java:210)
@@ -369,10 +369,10 @@ java.lang.IllegalStateException: getWriter() has already been called for this re
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.gzhu.funai.filter.CorsFilter.doFilter(CorsFilter.java:41)
+	at com.toughenflat.chatai.filter.CorsFilter.doFilter(CorsFilter.java:41)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.gzhu.funai.filter.ChannelFilter.doFilter(ChannelFilter.java:26)
+	at com.toughenflat.chatai.filter.ChannelFilter.doFilter(ChannelFilter.java:26)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
@@ -407,7 +407,7 @@ java.lang.IllegalStateException: getWriter() has already been called for this re
 2023-07-26 15:09:50.147 [background-preinit] WARN 
                 o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
 2023-07-26 15:10:36.223 [http-nio-8080-exec-1] WARN 
-                o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.gzhu.funai.global.GlobalExceptionHandler#exception(Exception)
+                o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.toughenflat.chatai.global.GlobalExceptionHandler#exception(Exception)
 java.lang.IllegalStateException: getWriter() has already been called for this response
 	at org.apache.catalina.connector.Response.getOutputStream(Response.java:547)
 	at org.apache.catalina.connector.ResponseFacade.getOutputStream(ResponseFacade.java:210)
@@ -436,7 +436,7 @@ java.lang.IllegalStateException: getWriter() has already been called for this re
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.gzhu.funai.filter.CorsFilter.doFilter(CorsFilter.java:41)
+	at com.toughenflat.chatai.filter.CorsFilter.doFilter(CorsFilter.java:41)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
@@ -471,11 +471,11 @@ java.lang.IllegalStateException: getWriter() has already been called for this re
 2023-07-26 15:11:27.778 [HikariPool-1 housekeeper] WARN 
                 com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m4s189ms700µs700ns).
 2023-07-26 15:11:32.227 [http-nio-8080-exec-3] WARN 
-                o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.gzhu.funai.mapper]' package. Please check your configuration.
+                o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.toughenflat.chatai.mapper]' package. Please check your configuration.
 2023-07-26 15:12:07.376 [background-preinit] WARN 
                 o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
 2023-07-26 15:13:05.817 [http-nio-8080-exec-1] WARN 
-                o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.gzhu.funai.global.GlobalExceptionHandler#exception(Exception)
+                o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.toughenflat.chatai.global.GlobalExceptionHandler#exception(Exception)
 java.lang.IllegalStateException: getWriter() has already been called for this response
 	at org.apache.catalina.connector.Response.getOutputStream(Response.java:547)
 	at org.apache.catalina.connector.ResponseFacade.getOutputStream(ResponseFacade.java:210)
@@ -538,7 +538,7 @@ java.lang.IllegalStateException: getWriter() has already been called for this re
 2023-07-26 15:41:12.947 [HikariPool-1 housekeeper] WARN 
                 com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s811ms94µs900ns).
 2023-07-26 15:41:36.344 [http-nio-8080-exec-1] WARN 
-                o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.gzhu.funai.global.GlobalExceptionHandler#exception(Exception)
+                o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.toughenflat.chatai.global.GlobalExceptionHandler#exception(Exception)
 java.lang.IllegalStateException: getWriter() has already been called for this response
 	at org.apache.catalina.connector.Response.getOutputStream(Response.java:547)
 	at org.apache.catalina.connector.ResponseFacade.getOutputStream(ResponseFacade.java:210)
@@ -567,10 +567,10 @@ java.lang.IllegalStateException: getWriter() has already been called for this re
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.gzhu.funai.filter.CorsFilter.doFilter(CorsFilter.java:41)
+	at com.toughenflat.chatai.filter.CorsFilter.doFilter(CorsFilter.java:41)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.gzhu.funai.filter.ChannelFilter.doFilter(ChannelFilter.java:26)
+	at com.toughenflat.chatai.filter.ChannelFilter.doFilter(ChannelFilter.java:26)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
@@ -613,4 +613,18 @@ java.lang.IllegalStateException: getWriter() has already been called for this re
 2023-07-27 09:48:59.672 [scheduling-1] WARN 
                 com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5a228dee (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
 2023-07-27 09:49:00.114 [scheduling-1] WARN 
-                o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.gzhu.funai.mapper]' package. Please check your configuration.
+                o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.toughenflat.chatai.mapper]' package. Please check your configuration.
+2023-07-27 09:51:45.344 [rebel-change-detector-thread] WARN 
+                o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.toughenflat.chatai.mapper]' package. Please check your configuration.
+2023-07-27 09:55:45.648 [background-preinit] WARN 
+                o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-07-30 01:24:01.880 [background-preinit] WARN 
+                o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-07-30 01:26:32.600 [background-preinit] WARN 
+                o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-07-30 01:28:36.375 [background-preinit] WARN 
+                o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-07-30 10:08:47.876 [rebel-change-detector-thread] WARN 
+                o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.toughenflat.chatai.mapper]' package. Please check your configuration.
+2023-07-30 11:10:23.378 [background-preinit] WARN 
+                o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath

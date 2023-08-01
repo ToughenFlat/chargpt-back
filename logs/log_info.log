@@ -1,7 +1,7 @@
 2023-07-21 19:26:12.868 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 15132 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 15132 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
 2023-07-21 19:26:12.868 [main] INFO 
-                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
 2023-07-21 19:26:14.337 [main] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2023-07-21 19:26:14.342 [main] INFO 
@@ -31,9 +31,9 @@
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
 2023-07-21 19:32:33.725 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 12604 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 12604 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
 2023-07-21 19:32:33.727 [main] INFO 
-                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
 2023-07-21 19:32:34.986 [main] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2023-07-21 19:32:34.991 [main] INFO 
@@ -59,7 +59,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-21 19:32:36.904 [main] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2023-07-21 19:32:37.398 [main] INFO 
-                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+                com.toughenflat.chatai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
 2023-07-21 19:32:37.400 [main] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
 2023-07-21 19:32:38.313 [main] INFO 
@@ -83,99 +83,99 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-21 19:32:39.172 [main] INFO 
                 o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 2023-07-21 19:32:39.179 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Started FunAiApplication in 6.286 seconds (JVM running for 11.632)
+                com.toughenflat.chatai.FunAiApplication - Started FunAiApplication in 6.286 seconds (JVM running for 11.632)
 2023-07-21 19:33:00.889 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-21 19:33:00.907 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-21 20:33:00.207 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-21 20:33:00.216 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-21 21:33:00.197 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-21 21:33:00.214 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-21 22:33:00.215 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-21 22:33:00.220 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-21 23:33:00.195 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-21 23:33:00.200 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 00:33:00.206 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 00:33:00.213 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 01:33:00.219 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 01:33:00.223 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 02:33:00.202 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 02:33:00.207 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 03:33:00.189 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 03:33:00.201 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 04:33:00.203 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 04:33:00.206 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 05:32:46.225 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 05:32:46.230 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 06:33:00.193 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 06:33:00.196 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 07:33:00.183 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 07:33:00.186 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 08:33:00.216 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 08:33:00.231 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 09:32:53.736 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 09:32:53.740 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 10:33:00.206 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 10:33:00.211 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 11:33:00.197 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 11:33:00.204 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 12:33:00.203 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 12:33:00.209 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 13:33:00.194 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 13:33:00.207 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 14:33:00.202 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 14:33:00.206 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 15:33:00.236 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 15:33:00.240 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 16:32:58.344 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 16:32:58.347 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 17:32:58.329 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 17:32:58.332 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 17:58:52.581 [SpringContextShutdownHook] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
 2023-07-22 17:58:52.588 [SpringContextShutdownHook] INFO 
@@ -185,9 +185,9 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-22 17:58:52.594 [SpringContextShutdownHook] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2023-07-22 17:59:02.641 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 15136 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 15136 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
 2023-07-22 17:59:02.642 [main] INFO 
-                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
 2023-07-22 17:59:04.815 [main] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2023-07-22 17:59:04.819 [main] INFO 
@@ -213,7 +213,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-22 17:59:07.539 [main] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2023-07-22 17:59:08.123 [main] INFO 
-                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+                com.toughenflat.chatai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
 2023-07-22 17:59:08.125 [main] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
 2023-07-22 17:59:09.404 [main] INFO 
@@ -237,119 +237,119 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-22 17:59:10.323 [main] INFO 
                 o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 2023-07-22 17:59:10.326 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Started FunAiApplication in 9.364 seconds (JVM running for 16.116)
+                com.toughenflat.chatai.FunAiApplication - Started FunAiApplication in 9.364 seconds (JVM running for 16.116)
 2023-07-22 17:59:32.182 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 17:59:32.205 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 18:59:11.816 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 18:59:11.823 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 19:59:31.353 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 19:59:31.359 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 20:59:31.327 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 20:59:31.333 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 21:59:31.351 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 21:59:31.356 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 22:59:31.360 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 22:59:31.365 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-22 23:59:31.327 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-22 23:59:31.332 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-23 00:59:31.348 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-23 00:59:31.356 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-23 01:59:31.340 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-23 01:59:31.347 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-23 02:59:31.350 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-23 02:59:31.354 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-23 03:59:31.346 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-23 03:59:31.352 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-23 04:59:31.336 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-23 04:59:31.339 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-23 05:59:31.356 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-23 05:59:31.360 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-23 06:59:31.354 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-23 06:59:31.358 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-23 07:59:31.315 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-23 07:59:31.318 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-23 08:59:31.335 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-23 08:59:31.338 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-23 09:59:31.351 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-23 09:59:31.354 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-23 10:59:31.348 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-23 10:59:31.351 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-23 11:59:31.339 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-23 11:59:31.342 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-23 12:59:31.346 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-23 12:59:31.349 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-23 13:59:31.354 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-23 13:59:31.357 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-23 14:59:31.363 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-23 14:59:31.366 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-23 15:59:31.356 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-23 15:59:31.363 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-23 16:59:30.186 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-23 16:59:30.189 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-23 17:59:30.144 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-23 17:59:30.148 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-23 18:59:30.183 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-23 18:59:30.192 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-23 19:59:30.188 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-23 19:59:30.196 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-23 20:59:30.173 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-23 20:59:30.176 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-23 21:03:33.371 [SpringContextShutdownHook] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
 2023-07-23 21:03:33.376 [SpringContextShutdownHook] INFO 
@@ -359,9 +359,9 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-23 21:03:33.381 [SpringContextShutdownHook] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2023-07-25 17:45:16.058 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 2644 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 2644 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
 2023-07-25 17:45:16.086 [main] INFO 
-                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
 2023-07-25 17:45:17.618 [main] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2023-07-25 17:45:17.620 [main] INFO 
@@ -387,7 +387,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-25 17:45:20.964 [main] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2023-07-25 17:45:21.325 [main] INFO 
-                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+                com.toughenflat.chatai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
 2023-07-25 17:45:21.326 [main] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
 2023-07-25 17:45:22.686 [main] INFO 
@@ -411,11 +411,11 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-25 17:45:23.422 [main] INFO 
                 o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 2023-07-25 17:45:23.429 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Started FunAiApplication in 8.197 seconds (JVM running for 9.54)
+                com.toughenflat.chatai.FunAiApplication - Started FunAiApplication in 8.197 seconds (JVM running for 9.54)
 2023-07-25 17:45:45.500 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-25 17:45:45.908 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-25 17:47:40.923 [SpringContextShutdownHook] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
 2023-07-25 17:47:40.925 [SpringContextShutdownHook] INFO 
@@ -425,9 +425,9 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-25 17:47:40.930 [SpringContextShutdownHook] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2023-07-25 18:11:25.197 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 10128 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 10128 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
 2023-07-25 18:11:25.202 [main] INFO 
-                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
 2023-07-25 18:11:27.509 [main] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2023-07-25 18:11:27.515 [main] INFO 
@@ -453,7 +453,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-25 18:11:31.384 [main] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2023-07-25 18:11:31.888 [main] INFO 
-                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+                com.toughenflat.chatai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
 2023-07-25 18:11:31.891 [main] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
 2023-07-25 18:11:32.883 [main] INFO 
@@ -495,9 +495,9 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-25 18:11:34.015 [main] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2023-07-25 18:14:20.998 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 17924 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 17924 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
 2023-07-25 18:14:21.000 [main] INFO 
-                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
 2023-07-25 18:14:22.295 [main] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2023-07-25 18:14:22.299 [main] INFO 
@@ -523,7 +523,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-25 18:14:25.729 [main] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2023-07-25 18:14:26.156 [main] INFO 
-                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+                com.toughenflat.chatai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
 2023-07-25 18:14:26.158 [main] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
 2023-07-25 18:14:27.028 [main] INFO 
@@ -547,11 +547,11 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-25 18:14:27.853 [main] INFO 
                 o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 2023-07-25 18:14:27.857 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Started FunAiApplication in 7.678 seconds (JVM running for 13.023)
+                com.toughenflat.chatai.FunAiApplication - Started FunAiApplication in 7.678 seconds (JVM running for 13.023)
 2023-07-25 18:14:49.839 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-25 18:14:50.288 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-25 18:29:00.278 [http-nio-8080-exec-1] INFO 
                 o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-07-25 18:29:00.279 [http-nio-8080-exec-1] INFO 
@@ -559,33 +559,33 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-25 18:29:00.288 [http-nio-8080-exec-1] INFO 
                 org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
 2023-07-25 18:29:00.314 [http-nio-8080-exec-1] INFO 
-                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/oneShot 方法入参: 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/oneShot 方法入参:
 2023-07-25 18:29:00.566 [http-nio-8080-exec-1] INFO 
-                com.gzhu.funai.filter.ChannelFilter - ip127.0.0.1, 访问路径/chat/oneShot完毕，耗时：257ms
+                com.toughenflat.chatai.filter.ChannelFilter - ip127.0.0.1, 访问路径/chat/oneShot完毕，耗时：257ms
 2023-07-25 18:29:23.139 [http-nio-8080-exec-2] INFO 
-                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/oneShot 方法入参: 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/oneShot 方法入参:
 2023-07-25 18:29:23.170 [http-nio-8080-exec-2] INFO 
-                com.gzhu.funai.filter.ChannelFilter - ip127.0.0.1, 访问路径/chat/oneShot完毕，耗时：31ms
+                com.toughenflat.chatai.filter.ChannelFilter - ip127.0.0.1, 访问路径/chat/oneShot完毕，耗时：31ms
 2023-07-25 18:30:04.576 [http-nio-8080-exec-3] INFO 
-                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/oneShot 方法入参: 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/oneShot 方法入参:
 2023-07-25 18:30:04.577 [http-nio-8080-exec-3] INFO 
-                com.gzhu.funai.filter.ChannelFilter - ip127.0.0.1, 访问路径/chat/oneShot完毕，耗时：1ms
+                com.toughenflat.chatai.filter.ChannelFilter - ip127.0.0.1, 访问路径/chat/oneShot完毕，耗时：1ms
 2023-07-25 18:30:05.641 [http-nio-8080-exec-4] INFO 
-                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/oneShot 方法入参: 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/oneShot 方法入参:
 2023-07-25 18:30:05.642 [http-nio-8080-exec-4] INFO 
-                com.gzhu.funai.filter.ChannelFilter - ip127.0.0.1, 访问路径/chat/oneShot完毕，耗时：1ms
+                com.toughenflat.chatai.filter.ChannelFilter - ip127.0.0.1, 访问路径/chat/oneShot完毕，耗时：1ms
 2023-07-25 18:30:06.081 [http-nio-8080-exec-5] INFO 
-                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/oneShot 方法入参: 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/oneShot 方法入参:
 2023-07-25 18:30:06.082 [http-nio-8080-exec-5] INFO 
-                com.gzhu.funai.filter.ChannelFilter - ip127.0.0.1, 访问路径/chat/oneShot完毕，耗时：1ms
+                com.toughenflat.chatai.filter.ChannelFilter - ip127.0.0.1, 访问路径/chat/oneShot完毕，耗时：1ms
 2023-07-25 18:30:06.283 [http-nio-8080-exec-6] INFO 
-                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/oneShot 方法入参: 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/oneShot 方法入参:
 2023-07-25 18:30:06.284 [http-nio-8080-exec-6] INFO 
-                com.gzhu.funai.filter.ChannelFilter - ip127.0.0.1, 访问路径/chat/oneShot完毕，耗时：1ms
+                com.toughenflat.chatai.filter.ChannelFilter - ip127.0.0.1, 访问路径/chat/oneShot完毕，耗时：1ms
 2023-07-25 18:30:16.576 [http-nio-8080-exec-7] INFO 
-                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/oneShot 方法入参: 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/oneShot 方法入参:
 2023-07-25 18:30:16.577 [http-nio-8080-exec-7] INFO 
-                com.gzhu.funai.filter.ChannelFilter - ip127.0.0.1, 访问路径/chat/oneShot完毕，耗时：1ms
+                com.toughenflat.chatai.filter.ChannelFilter - ip127.0.0.1, 访问路径/chat/oneShot完毕，耗时：1ms
 2023-07-25 18:43:52.328 [SpringContextShutdownHook] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
 2023-07-25 18:43:52.333 [SpringContextShutdownHook] INFO 
@@ -595,9 +595,9 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-25 18:43:53.194 [SpringContextShutdownHook] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2023-07-25 18:44:01.879 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 14584 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 14584 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
 2023-07-25 18:44:01.880 [main] INFO 
-                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
 2023-07-25 18:44:03.128 [main] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2023-07-25 18:44:03.132 [main] INFO 
@@ -623,7 +623,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-25 18:44:06.563 [main] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2023-07-25 18:44:07.005 [main] INFO 
-                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+                com.toughenflat.chatai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
 2023-07-25 18:44:07.006 [main] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
 2023-07-25 18:44:07.868 [main] INFO 
@@ -647,65 +647,65 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-25 18:44:08.694 [main] INFO 
                 o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 2023-07-25 18:44:08.697 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Started FunAiApplication in 7.634 seconds (JVM running for 12.791)
+                com.toughenflat.chatai.FunAiApplication - Started FunAiApplication in 7.634 seconds (JVM running for 12.791)
 2023-07-25 18:44:30.650 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-25 18:44:31.106 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-25 18:47:11.459 [rebel-change-detector-thread] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2023-07-25 18:47:11.498 [rebel-change-detector-thread] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38ms. Found 0 repository interfaces.
 2023-07-25 19:44:30.022 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-25 19:44:30.430 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-25 20:44:30.010 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-25 20:44:30.409 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-25 21:44:30.010 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-25 21:44:30.447 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-25 22:44:35.042 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-25 22:44:35.477 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-25 23:44:29.979 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-25 23:44:30.380 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-26 00:44:44.187 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-26 01:44:40.025 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-26 01:44:40.444 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-26 02:44:35.026 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-26 02:44:35.476 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-26 03:44:40.078 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-26 03:44:40.552 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-26 04:44:29.986 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-26 04:44:30.390 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-26 05:44:30.009 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-26 05:44:30.566 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-26 06:44:45.122 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-26 06:44:45.655 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-26 07:44:45.004 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-26 07:44:45.536 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-26 08:34:16.341 [SpringContextShutdownHook] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
 2023-07-26 08:34:16.346 [SpringContextShutdownHook] INFO 
@@ -715,9 +715,9 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 08:34:16.354 [SpringContextShutdownHook] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2023-07-26 08:34:24.392 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 7740 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 7740 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
 2023-07-26 08:34:24.394 [main] INFO 
-                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
 2023-07-26 08:34:25.696 [main] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2023-07-26 08:34:25.700 [main] INFO 
@@ -747,9 +747,9 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
 2023-07-26 08:35:48.079 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 8896 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 8896 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
 2023-07-26 08:35:48.079 [main] INFO 
-                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
 2023-07-26 08:35:49.338 [main] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2023-07-26 08:35:49.343 [main] INFO 
@@ -775,7 +775,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 08:35:53.792 [main] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2023-07-26 08:35:54.217 [main] INFO 
-                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+                com.toughenflat.chatai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
 2023-07-26 08:35:54.218 [main] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
 2023-07-26 08:35:55.149 [main] INFO 
@@ -799,9 +799,9 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 08:35:56.011 [main] INFO 
                 o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 2023-07-26 08:35:56.015 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Started FunAiApplication in 8.732 seconds (JVM running for 14.227)
+                com.toughenflat.chatai.FunAiApplication - Started FunAiApplication in 8.732 seconds (JVM running for 14.227)
 2023-07-26 08:36:17.660 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-26 08:36:17.721 [main] INFO 
                 o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
 
@@ -815,9 +815,9 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 08:36:18.838 [main] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2023-07-26 08:37:25.082 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 568 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 568 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
 2023-07-26 08:37:25.084 [main] INFO 
-                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
 2023-07-26 08:37:26.331 [main] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2023-07-26 08:37:26.335 [main] INFO 
@@ -843,7 +843,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 08:37:29.774 [main] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2023-07-26 08:37:30.264 [main] INFO 
-                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+                com.toughenflat.chatai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
 2023-07-26 08:37:30.266 [main] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
 2023-07-26 08:37:31.166 [main] INFO 
@@ -867,9 +867,9 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 08:37:32.048 [main] INFO 
                 o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 2023-07-26 08:37:32.052 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Started FunAiApplication in 7.782 seconds (JVM running for 13.451)
+                com.toughenflat.chatai.FunAiApplication - Started FunAiApplication in 7.782 seconds (JVM running for 13.451)
 2023-07-26 08:37:53.662 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-26 08:37:53.693 [main] INFO 
                 o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
 
@@ -883,9 +883,9 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 08:38:13.736 [main] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2023-07-26 10:03:49.218 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 18204 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 18204 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
 2023-07-26 10:03:49.218 [main] INFO 
-                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
 2023-07-26 10:03:50.493 [main] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2023-07-26 10:03:50.497 [main] INFO 
@@ -915,9 +915,9 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
 2023-07-26 10:18:09.227 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 17668 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 17668 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
 2023-07-26 10:18:09.229 [main] INFO 
-                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
 2023-07-26 10:18:10.550 [main] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2023-07-26 10:18:10.554 [main] INFO 
@@ -947,9 +947,9 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
 2023-07-26 10:19:08.567 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 4304 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 4304 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
 2023-07-26 10:19:08.569 [main] INFO 
-                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
 2023-07-26 10:19:09.816 [main] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2023-07-26 10:19:09.821 [main] INFO 
@@ -975,7 +975,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 10:19:11.890 [main] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2023-07-26 10:19:12.377 [main] INFO 
-                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+                com.toughenflat.chatai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
 2023-07-26 10:19:12.379 [main] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
 2023-07-26 10:19:13.300 [main] INFO 
@@ -999,11 +999,11 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 10:19:14.202 [main] INFO 
                 o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 2023-07-26 10:19:14.206 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Started FunAiApplication in 6.448 seconds (JVM running for 11.672)
+                com.toughenflat.chatai.FunAiApplication - Started FunAiApplication in 6.448 seconds (JVM running for 11.672)
 2023-07-26 10:19:16.880 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-26 10:19:16.900 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-26 10:19:35.377 [main] INFO 
                 o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
 
@@ -1017,9 +1017,9 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 10:19:35.409 [main] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2023-07-26 10:20:05.550 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 15224 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 15224 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
 2023-07-26 10:20:05.552 [main] INFO 
-                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
 2023-07-26 10:20:06.824 [main] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2023-07-26 10:20:06.828 [main] INFO 
@@ -1045,7 +1045,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 10:20:08.755 [main] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2023-07-26 10:20:09.270 [main] INFO 
-                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+                com.toughenflat.chatai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
 2023-07-26 10:20:09.275 [main] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
 2023-07-26 10:20:10.217 [main] INFO 
@@ -1069,11 +1069,11 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 10:20:11.110 [main] INFO 
                 o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 2023-07-26 10:20:11.115 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Started FunAiApplication in 6.366 seconds (JVM running for 11.888)
+                com.toughenflat.chatai.FunAiApplication - Started FunAiApplication in 6.366 seconds (JVM running for 11.888)
 2023-07-26 10:20:28.789 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-26 10:20:28.823 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-26 10:42:06.523 [SpringContextShutdownHook] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
 2023-07-26 10:42:06.528 [SpringContextShutdownHook] INFO 
@@ -1083,9 +1083,9 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 10:42:06.543 [SpringContextShutdownHook] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2023-07-26 14:53:00.290 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 12248 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 12248 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
 2023-07-26 14:53:00.292 [main] INFO 
-                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
 2023-07-26 14:53:02.531 [main] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2023-07-26 14:53:02.536 [main] INFO 
@@ -1111,7 +1111,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 14:53:05.546 [main] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2023-07-26 14:53:06.089 [main] INFO 
-                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+                com.toughenflat.chatai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
 2023-07-26 14:53:06.091 [main] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
 2023-07-26 14:53:07.864 [main] INFO 
@@ -1135,15 +1135,15 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 14:53:08.994 [main] INFO 
                 o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 2023-07-26 14:53:09.000 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Started FunAiApplication in 10.48 seconds (JVM running for 17.316)
+                com.toughenflat.chatai.FunAiApplication - Started FunAiApplication in 10.48 seconds (JVM running for 17.316)
 2023-07-26 14:53:30.837 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-26 14:53:30.892 [scheduling-1] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2023-07-26 14:53:30.919 [scheduling-1] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
 2023-07-26 14:53:30.942 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-26 14:54:13.532 [http-nio-8080-exec-1] INFO 
                 o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-07-26 14:54:13.532 [http-nio-8080-exec-1] INFO 
@@ -1151,37 +1151,37 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 14:54:13.541 [http-nio-8080-exec-1] INFO 
                 org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
 2023-07-26 14:54:13.574 [http-nio-8080-exec-1] INFO 
-                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/test 方法入参: 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/test 方法入参:
 2023-07-26 14:54:13.634 [http-nio-8080-exec-1] INFO 
-                com.gzhu.funai.filter.ChannelFilter - ip127.0.0.1, 访问路径/chat/test完毕，耗时：71ms
+                com.toughenflat.chatai.filter.ChannelFilter - ip127.0.0.1, 访问路径/chat/test完毕，耗时：71ms
 2023-07-26 14:54:13.707 [http-nio-8080-exec-4] INFO 
-                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/favicon.ico 方法入参: 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/favicon.ico 方法入参:
 2023-07-26 14:54:13.719 [http-nio-8080-exec-4] INFO 
-                com.gzhu.funai.filter.ChannelFilter - ip127.0.0.1, 访问路径/favicon.ico完毕，耗时：12ms
+                com.toughenflat.chatai.filter.ChannelFilter - ip127.0.0.1, 访问路径/favicon.ico完毕，耗时：12ms
 2023-07-26 14:57:13.589 [http-nio-8080-exec-2] INFO 
-                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/test 方法入参: 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/test 方法入参:
 2023-07-26 14:57:25.081 [http-nio-8080-exec-2] INFO 
-                com.gzhu.funai.filter.ChannelFilter - ip127.0.0.1, 访问路径/chat/test完毕，耗时：11492ms
+                com.toughenflat.chatai.filter.ChannelFilter - ip127.0.0.1, 访问路径/chat/test完毕，耗时：11492ms
 2023-07-26 14:57:25.111 [http-nio-8080-exec-3] INFO 
-                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/favicon.ico 方法入参: 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/favicon.ico 方法入参:
 2023-07-26 14:57:27.229 [http-nio-8080-exec-3] INFO 
-                com.gzhu.funai.filter.ChannelFilter - ip127.0.0.1, 访问路径/favicon.ico完毕，耗时：2118ms
+                com.toughenflat.chatai.filter.ChannelFilter - ip127.0.0.1, 访问路径/favicon.ico完毕，耗时：2118ms
 2023-07-26 14:58:14.761 [http-nio-8080-exec-8] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2023-07-26 14:58:14.792 [http-nio-8080-exec-8] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 0 repository interfaces.
 2023-07-26 14:58:14.802 [http-nio-8080-exec-8] INFO 
-                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/test 方法入参: 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/test 方法入参:
 2023-07-26 14:58:25.241 [http-nio-8080-exec-8] INFO 
-                com.gzhu.funai.filter.ChannelFilter - ip127.0.0.1, 访问路径/chat/test完毕，耗时：10439ms
+                com.toughenflat.chatai.filter.ChannelFilter - ip127.0.0.1, 访问路径/chat/test完毕，耗时：10439ms
 2023-07-26 14:58:25.720 [http-nio-8080-exec-7] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2023-07-26 14:58:25.757 [http-nio-8080-exec-7] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37ms. Found 0 repository interfaces.
 2023-07-26 14:58:25.781 [http-nio-8080-exec-7] INFO 
-                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/favicon.ico 方法入参: 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/favicon.ico 方法入参:
 2023-07-26 14:58:29.970 [http-nio-8080-exec-7] INFO 
-                com.gzhu.funai.filter.ChannelFilter - ip127.0.0.1, 访问路径/favicon.ico完毕，耗时：4189ms
+                com.toughenflat.chatai.filter.ChannelFilter - ip127.0.0.1, 访问路径/favicon.ico完毕，耗时：4189ms
 2023-07-26 14:59:05.401 [SpringContextShutdownHook] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
 2023-07-26 14:59:05.411 [SpringContextShutdownHook] INFO 
@@ -1191,9 +1191,9 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 14:59:05.429 [SpringContextShutdownHook] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2023-07-26 14:59:13.589 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 14428 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 14428 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
 2023-07-26 14:59:13.589 [main] INFO 
-                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
 2023-07-26 14:59:14.905 [main] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2023-07-26 14:59:14.909 [main] INFO 
@@ -1219,7 +1219,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 14:59:16.956 [main] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2023-07-26 14:59:17.384 [main] INFO 
-                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+                com.toughenflat.chatai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
 2023-07-26 14:59:17.386 [main] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
 2023-07-26 14:59:18.272 [main] INFO 
@@ -1243,7 +1243,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 14:59:19.124 [main] INFO 
                 o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 2023-07-26 14:59:19.129 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Started FunAiApplication in 6.41 seconds (JVM running for 12.302)
+                com.toughenflat.chatai.FunAiApplication - Started FunAiApplication in 6.41 seconds (JVM running for 12.302)
 2023-07-26 14:59:29.078 [http-nio-8080-exec-1] INFO 
                 o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-07-26 14:59:29.078 [http-nio-8080-exec-1] INFO 
@@ -1251,17 +1251,17 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 14:59:29.086 [http-nio-8080-exec-1] INFO 
                 org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
 2023-07-26 14:59:29.105 [http-nio-8080-exec-1] INFO 
-                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/test 方法入参: 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/test 方法入参:
 2023-07-26 14:59:40.741 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-26 14:59:40.779 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-26 15:01:58.928 [http-nio-8080-exec-2] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2023-07-26 15:01:58.967 [http-nio-8080-exec-2] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37ms. Found 0 repository interfaces.
 2023-07-26 15:01:59.120 [http-nio-8080-exec-2] INFO 
-                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/test 方法入参: 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/test 方法入参:
 2023-07-26 15:01:59.149 [http-nio-8080-exec-2] INFO 
                 s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
 2023-07-26 15:02:52.107 [SpringContextShutdownHook] INFO 
@@ -1273,9 +1273,9 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 15:02:52.143 [SpringContextShutdownHook] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2023-07-26 15:03:00.241 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 12448 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 12448 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
 2023-07-26 15:03:00.242 [main] INFO 
-                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
 2023-07-26 15:03:01.554 [main] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2023-07-26 15:03:01.558 [main] INFO 
@@ -1301,7 +1301,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 15:03:03.531 [main] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2023-07-26 15:03:03.986 [main] INFO 
-                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+                com.toughenflat.chatai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
 2023-07-26 15:03:03.988 [main] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
 2023-07-26 15:03:04.854 [main] INFO 
@@ -1325,7 +1325,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 15:03:05.697 [main] INFO 
                 o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 2023-07-26 15:03:05.701 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Started FunAiApplication in 6.468 seconds (JVM running for 12.057)
+                com.toughenflat.chatai.FunAiApplication - Started FunAiApplication in 6.468 seconds (JVM running for 12.057)
 2023-07-26 15:03:12.512 [http-nio-8080-exec-1] INFO 
                 o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-07-26 15:03:12.512 [http-nio-8080-exec-1] INFO 
@@ -1333,11 +1333,11 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 15:03:12.520 [http-nio-8080-exec-1] INFO 
                 org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
 2023-07-26 15:03:12.540 [http-nio-8080-exec-1] INFO 
-                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/test 方法入参: 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/test 方法入参:
 2023-07-26 15:03:27.315 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-26 15:03:27.350 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-26 15:07:38.566 [SpringContextShutdownHook] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
 2023-07-26 15:07:38.573 [SpringContextShutdownHook] INFO 
@@ -1347,9 +1347,9 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 15:07:38.587 [SpringContextShutdownHook] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2023-07-26 15:07:48.223 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 14900 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 14900 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
 2023-07-26 15:07:48.225 [main] INFO 
-                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
 2023-07-26 15:07:49.503 [main] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2023-07-26 15:07:49.508 [main] INFO 
@@ -1375,7 +1375,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 15:07:52.181 [main] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2023-07-26 15:07:52.660 [main] INFO 
-                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+                com.toughenflat.chatai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
 2023-07-26 15:07:52.661 [main] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
 2023-07-26 15:07:53.548 [main] INFO 
@@ -1399,7 +1399,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 15:07:54.397 [main] INFO 
                 o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 2023-07-26 15:07:54.402 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Started FunAiApplication in 7.002 seconds (JVM running for 12.259)
+                com.toughenflat.chatai.FunAiApplication - Started FunAiApplication in 7.002 seconds (JVM running for 12.259)
 2023-07-26 15:08:12.942 [http-nio-8080-exec-1] INFO 
                 o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-07-26 15:08:12.942 [http-nio-8080-exec-1] INFO 
@@ -1407,11 +1407,11 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 15:08:12.949 [http-nio-8080-exec-1] INFO 
                 org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
 2023-07-26 15:08:12.968 [http-nio-8080-exec-1] INFO 
-                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/test 方法入参: 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/test 方法入参:
 2023-07-26 15:08:17.123 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-26 15:08:17.149 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-26 15:09:41.201 [SpringContextShutdownHook] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
 2023-07-26 15:09:41.207 [SpringContextShutdownHook] INFO 
@@ -1421,9 +1421,9 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 15:09:41.227 [SpringContextShutdownHook] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2023-07-26 15:09:50.145 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 16424 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 16424 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
 2023-07-26 15:09:50.147 [main] INFO 
-                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
 2023-07-26 15:09:51.450 [main] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2023-07-26 15:09:51.454 [main] INFO 
@@ -1449,7 +1449,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 15:09:53.470 [main] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2023-07-26 15:09:53.925 [main] INFO 
-                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+                com.toughenflat.chatai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
 2023-07-26 15:09:53.927 [main] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
 2023-07-26 15:09:54.833 [main] INFO 
@@ -1473,7 +1473,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 15:09:55.681 [main] INFO 
                 o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 2023-07-26 15:09:55.685 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Started FunAiApplication in 6.359 seconds (JVM running for 11.786)
+                com.toughenflat.chatai.FunAiApplication - Started FunAiApplication in 6.359 seconds (JVM running for 11.786)
 2023-07-26 15:10:04.422 [http-nio-8080-exec-1] INFO 
                 o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-07-26 15:10:04.422 [http-nio-8080-exec-1] INFO 
@@ -1481,9 +1481,9 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 15:10:04.430 [http-nio-8080-exec-1] INFO 
                 org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
 2023-07-26 15:10:17.301 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-26 15:10:17.336 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-26 15:11:32.234 [http-nio-8080-exec-3] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2023-07-26 15:11:32.268 [http-nio-8080-exec-3] INFO 
@@ -1497,9 +1497,9 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 15:11:59.818 [SpringContextShutdownHook] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2023-07-26 15:12:07.376 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 13336 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 13336 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
 2023-07-26 15:12:07.378 [main] INFO 
-                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
 2023-07-26 15:12:08.652 [main] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2023-07-26 15:12:08.657 [main] INFO 
@@ -1525,7 +1525,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 15:12:10.594 [main] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2023-07-26 15:12:11.037 [main] INFO 
-                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+                com.toughenflat.chatai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
 2023-07-26 15:12:11.039 [main] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
 2023-07-26 15:12:11.926 [main] INFO 
@@ -1549,11 +1549,11 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 15:12:12.791 [main] INFO 
                 o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 2023-07-26 15:12:12.796 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Started FunAiApplication in 6.287 seconds (JVM running for 11.762)
+                com.toughenflat.chatai.FunAiApplication - Started FunAiApplication in 6.287 seconds (JVM running for 11.762)
 2023-07-26 15:12:34.402 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-26 15:12:34.424 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-26 15:12:34.574 [http-nio-8080-exec-1] INFO 
                 o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-07-26 15:12:34.574 [http-nio-8080-exec-1] INFO 
@@ -1569,9 +1569,9 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 15:24:23.422 [SpringContextShutdownHook] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2023-07-26 15:33:22.261 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 6112 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 6112 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
 2023-07-26 15:33:22.262 [main] INFO 
-                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
 2023-07-26 15:33:23.542 [main] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2023-07-26 15:33:23.547 [main] INFO 
@@ -1597,7 +1597,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 15:33:26.945 [main] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2023-07-26 15:33:27.396 [main] INFO 
-                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+                com.toughenflat.chatai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
 2023-07-26 15:33:27.398 [main] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
 2023-07-26 15:33:28.285 [main] INFO 
@@ -1621,11 +1621,11 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 15:33:29.124 [main] INFO 
                 o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 2023-07-26 15:33:29.127 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Started FunAiApplication in 7.688 seconds (JVM running for 12.944)
+                com.toughenflat.chatai.FunAiApplication - Started FunAiApplication in 7.688 seconds (JVM running for 12.944)
 2023-07-26 15:33:50.716 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+                com.toughenflat.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
 2023-07-26 15:33:51.140 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-26 15:40:53.123 [http-nio-8080-exec-1] INFO 
                 o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-07-26 15:40:53.123 [http-nio-8080-exec-1] INFO 
@@ -1633,9 +1633,9 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 15:40:53.133 [http-nio-8080-exec-1] INFO 
                 org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
 2023-07-26 15:40:53.159 [http-nio-8080-exec-1] INFO 
-                com.gzhu.funai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/test 方法入参: 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/chat/test 方法入参:
 2023-07-26 15:41:15.460 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
 2023-07-26 15:44:54.007 [SpringContextShutdownHook] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
 2023-07-26 15:44:54.013 [SpringContextShutdownHook] INFO 
@@ -1645,9 +1645,9 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-26 15:44:54.030 [SpringContextShutdownHook] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2023-07-27 09:43:39.113 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 18352 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 18352 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
 2023-07-27 09:43:39.246 [main] INFO 
-                com.gzhu.funai.FunAiApplication - The following profiles are active: dev
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
 2023-07-27 09:43:42.002 [main] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2023-07-27 09:43:42.008 [main] INFO 
@@ -1673,7 +1673,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-27 09:43:47.333 [main] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2023-07-27 09:43:48.026 [main] INFO 
-                com.gzhu.funai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+                com.toughenflat.chatai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
 2023-07-27 09:43:48.027 [main] INFO 
                 o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
 2023-07-27 09:43:50.061 [main] INFO 
@@ -1697,10 +1697,443 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2023-07-27 09:43:51.187 [main] INFO 
                 o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
 2023-07-27 09:43:51.191 [main] INFO 
-                com.gzhu.funai.FunAiApplication - Started FunAiApplication in 14.213 seconds (JVM running for 20.922)
+                com.toughenflat.chatai.FunAiApplication - Started FunAiApplication in 14.213 seconds (JVM running for 20.922)
 2023-07-27 09:49:00.151 [scheduling-1] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2023-07-27 09:49:00.178 [scheduling-1] INFO 
                 o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
 2023-07-27 09:49:00.501 [scheduling-1] INFO 
-                com.gzhu.funai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-27 09:51:45.437 [rebel-change-detector-thread] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-07-27 09:51:45.505 [rebel-change-detector-thread] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67ms. Found 0 repository interfaces.
+2023-07-27 09:51:50.290 [http-nio-8888-exec-1] INFO 
+                o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-27 09:51:50.290 [http-nio-8888-exec-1] INFO 
+                org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-27 09:51:50.314 [http-nio-8888-exec-1] INFO 
+                org.springframework.web.servlet.DispatcherServlet - Completed initialization in 24 ms
+2023-07-27 09:51:50.347 [http-nio-8888-exec-1] INFO 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/jrebel/statistics 方法入参: token=8bdb65d1-5357-42f4-b609-312427d11591&guid=rI0HkW46DEj4cSC4HTkB7rHUenxwhBpFKX%2BqIGuhGNg%3D&clientTime=1690422710011&clientProtocolVersion=1.1&username=Administrator&rebelVersion=2022.4.2&product=JRebel&definedUserId=1022176995%40qq.com&signature=ixPRiqiC0wwUL72SisfiQnRB5TjJbJ2Nz0Zf7ux44l8Gz4Iaz%2BrqfjHWcAsq%2FPhDZ2ywJ9PHc6t3SjD3npaB3ub6Y8gBkKtQYrw86NPph2OjcojvqcTZkHaLI76DE8E2Fj%2BovqssNx62RoKgU8IdGFFIAVB4GogQviZoXp1pZOk%3D&redeploys=1&duration=146
+2023-07-27 09:51:50.450 [http-nio-8888-exec-1] INFO 
+                com.toughenflat.chatai.filter.ChannelFilter - ip127.0.0.1, 访问路径/jrebel/statistics完毕，耗时：118ms
+2023-07-27 09:55:37.618 [SpringContextShutdownHook] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2023-07-27 09:55:37.623 [SpringContextShutdownHook] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'queueThreadPool'
+2023-07-27 09:55:37.624 [SpringContextShutdownHook] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-27 09:55:37.628 [SpringContextShutdownHook] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-27 09:55:45.640 [main] INFO 
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 6180 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+2023-07-27 09:55:45.642 [main] INFO 
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
+2023-07-27 09:55:47.002 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-07-27 09:55:47.012 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-07-27 09:55:47.100 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53ms. Found 0 repository interfaces.
+2023-07-27 09:55:47.545 [main] INFO 
+                o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-27 09:55:48.363 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-07-27 09:55:48.387 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-07-27 09:55:48.388 [main] INFO 
+                org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-27 09:55:48.388 [main] INFO 
+                org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2023-07-27 09:55:48.591 [main] INFO 
+                o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-27 09:55:48.591 [main] INFO 
+                org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2880 ms
+2023-07-27 09:55:49.264 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-27 09:55:51.117 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-27 09:55:51.570 [main] INFO 
+                com.toughenflat.chatai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+2023-07-27 09:55:51.571 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
+2023-07-27 09:55:52.514 [main] INFO 
+                s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-07-27 09:55:52.893 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-07-27 09:55:52.932 [main] INFO 
+                s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-07-27 09:55:52.956 [main] INFO 
+                s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-07-27 09:55:53.029 [main] INFO 
+                s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-07-27 09:55:53.185 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addSessionUsingPOST_1
+2023-07-27 09:55:53.302 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2023-07-27 09:55:53.304 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getSseEmitterUsingGET_1
+2023-07-27 09:55:53.382 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-07-27 09:55:53.410 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-07-27 09:55:53.416 [main] INFO 
+                com.toughenflat.chatai.FunAiApplication - Started FunAiApplication in 8.597 seconds (JVM running for 14.471)
+2023-07-27 09:55:57.935 [scheduling-1] INFO 
+                com.toughenflat.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-27 09:58:40.610 [SpringContextShutdownHook] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2023-07-27 09:58:40.619 [SpringContextShutdownHook] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'queueThreadPool'
+2023-07-27 09:58:40.621 [SpringContextShutdownHook] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-27 09:58:40.634 [SpringContextShutdownHook] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-30 01:24:01.386 [main] INFO 
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 15792 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+2023-07-30 01:24:01.408 [main] INFO 
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
+2023-07-30 01:24:06.095 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-07-30 01:24:06.112 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-07-30 01:24:06.278 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84ms. Found 0 repository interfaces.
+2023-07-30 01:26:32.614 [main] INFO 
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 18956 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+2023-07-30 01:26:32.615 [main] INFO 
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
+2023-07-30 01:26:34.048 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-07-30 01:26:34.052 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-07-30 01:26:34.130 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51ms. Found 0 repository interfaces.
+2023-07-30 01:26:34.875 [main] INFO 
+                o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-30 01:26:35.923 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-07-30 01:26:35.950 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-07-30 01:26:35.951 [main] INFO 
+                org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-30 01:26:35.952 [main] INFO 
+                org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2023-07-30 01:26:36.171 [main] INFO 
+                o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-30 01:26:36.172 [main] INFO 
+                org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3472 ms
+2023-07-30 01:26:37.076 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-30 01:26:37.944 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-30 01:26:38.924 [main] INFO 
+                com.toughenflat.chatai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+2023-07-30 01:26:38.925 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
+2023-07-30 01:26:41.023 [main] INFO 
+                s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-07-30 01:26:41.628 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-07-30 01:26:41.698 [main] INFO 
+                s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-07-30 01:26:41.725 [main] INFO 
+                s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-07-30 01:26:41.806 [main] INFO 
+                s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-07-30 01:26:42.024 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addSessionUsingPOST_1
+2023-07-30 01:26:42.148 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2023-07-30 01:26:42.151 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getSseEmitterUsingGET_1
+2023-07-30 01:26:42.252 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-07-30 01:26:42.309 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-07-30 01:26:42.316 [main] INFO 
+                com.toughenflat.chatai.FunAiApplication - Started FunAiApplication in 10.66 seconds (JVM running for 16.854)
+2023-07-30 01:26:51.881 [main] INFO 
+                o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-07-30 01:26:51.980 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2023-07-30 01:26:52.008 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'queueThreadPool'
+2023-07-30 01:26:52.010 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-30 01:26:52.027 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-30 01:28:36.365 [main] INFO 
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 21352 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+2023-07-30 01:28:36.368 [main] INFO 
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
+2023-07-30 01:28:37.741 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-07-30 01:28:37.746 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-07-30 01:28:37.828 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53ms. Found 0 repository interfaces.
+2023-07-30 01:28:38.290 [main] INFO 
+                o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-30 01:28:38.934 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-07-30 01:28:38.954 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-07-30 01:28:38.955 [main] INFO 
+                org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-30 01:28:38.955 [main] INFO 
+                org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2023-07-30 01:28:39.134 [main] INFO 
+                o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-30 01:28:39.134 [main] INFO 
+                org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2691 ms
+2023-07-30 01:28:39.626 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-30 01:28:39.945 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-30 01:28:40.435 [main] INFO 
+                com.toughenflat.chatai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+2023-07-30 01:28:40.436 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
+2023-07-30 01:28:41.415 [main] INFO 
+                s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-07-30 01:28:41.810 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-07-30 01:28:41.846 [main] INFO 
+                s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-07-30 01:28:41.870 [main] INFO 
+                s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-07-30 01:28:41.919 [main] INFO 
+                s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-07-30 01:28:42.079 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addSessionUsingPOST_1
+2023-07-30 01:28:42.200 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2023-07-30 01:28:42.202 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getSseEmitterUsingGET_1
+2023-07-30 01:28:42.279 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-07-30 01:28:42.306 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-07-30 01:28:42.310 [main] INFO 
+                com.toughenflat.chatai.FunAiApplication - Started FunAiApplication in 6.821 seconds (JVM running for 12.574)
+2023-07-30 01:29:19.906 [scheduling-1] INFO 
+                c.t.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-30 01:29:20.003 [scheduling-1] INFO 
+                c.t.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-30 02:29:03.363 [scheduling-1] INFO 
+                c.t.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-30 02:29:03.441 [scheduling-1] INFO 
+                c.t.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-30 03:29:03.418 [scheduling-1] INFO 
+                c.t.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-30 03:29:03.457 [scheduling-1] INFO 
+                c.t.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-30 04:29:03.397 [scheduling-1] INFO 
+                c.t.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-30 04:29:03.419 [scheduling-1] INFO 
+                c.t.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-30 05:29:03.369 [scheduling-1] INFO 
+                c.t.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-30 05:29:03.375 [scheduling-1] INFO 
+                c.t.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-30 06:29:03.357 [scheduling-1] INFO 
+                c.t.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-30 06:29:03.361 [scheduling-1] INFO 
+                c.t.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-30 07:29:03.320 [scheduling-1] INFO 
+                c.t.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-30 07:29:03.324 [scheduling-1] INFO 
+                c.t.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-30 08:29:03.332 [scheduling-1] INFO 
+                c.t.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-30 08:29:03.337 [scheduling-1] INFO 
+                c.t.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-30 09:29:03.334 [scheduling-1] INFO 
+                c.t.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-30 09:29:03.338 [scheduling-1] INFO 
+                c.t.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-30 10:05:55.301 [http-nio-8888-exec-1] INFO 
+                org.apache.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:415)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:292)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-07-30 10:05:55.456 [http-nio-8888-exec-2] INFO 
+                org.apache.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:415)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:292)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-07-30 10:08:47.723 [rebel-change-detector-thread] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-07-30 10:08:47.770 [rebel-change-detector-thread] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47ms. Found 0 repository interfaces.
+2023-07-30 10:08:48.340 [http-nio-8888-exec-9] INFO 
+                o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-30 10:08:48.342 [http-nio-8888-exec-9] INFO 
+                org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-30 10:08:48.401 [http-nio-8888-exec-9] INFO 
+                org.springframework.web.servlet.DispatcherServlet - Completed initialization in 58 ms
+2023-07-30 10:08:48.476 [http-nio-8888-exec-9] INFO 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/jrebel/statistics 方法入参: token=8bdb65d1-5357-42f4-b609-312427d11591&guid=rI0HkW46DEj4cSC4HTkB7rHUenxwhBpFKX%2BqIGuhGNg%3D&clientTime=1690682928257&clientProtocolVersion=1.1&username=Administrator&rebelVersion=2022.4.2&product=JRebel&definedUserId=1022176995%40qq.com&signature=cvNPJ4TeNhQfrRd%2FNYSKKbPMXc%2FRB4BVw3EOq%2BQad8AAdx8Z5rggT%2FLzYpJhAN%2Fc23W3XSWHp89Qcz9xdbfIECSnxkWI2HEzwm%2FXIojL3Q7c3m5QyAFeirZirXwL6pghsZmOUnyCbRxNnIZp1TWwzlQmsMLrlfX4XOY8BVF5E%2BQ%3D&redeploys=1&duration=146
+2023-07-30 10:08:48.564 [http-nio-8888-exec-9] INFO 
+                com.toughenflat.chatai.filter.ChannelFilter - ip127.0.0.1, 访问路径/jrebel/statistics完毕，耗时：113ms
+2023-07-30 10:09:00.470 [http-nio-8888-exec-10] INFO 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/login 方法入参: 
+2023-07-30 10:09:00.491 [http-nio-8888-exec-10] INFO 
+                com.toughenflat.chatai.filter.ChannelFilter - ip127.0.0.1, 访问路径/login完毕，耗时：21ms
+2023-07-30 10:09:30.215 [http-nio-8888-exec-2] INFO 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/login 方法入参: 
+2023-07-30 10:09:30.217 [http-nio-8888-exec-2] INFO 
+                com.toughenflat.chatai.filter.ChannelFilter - ip127.0.0.1, 访问路径/login完毕，耗时：2ms
+2023-07-30 10:10:45.119 [http-nio-8888-exec-5] INFO 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/user/login 方法入参: 
+2023-07-30 10:10:45.462 [http-nio-8888-exec-5] INFO 
+                com.toughenflat.chatai.filter.ChannelFilter - ip127.0.0.1, 访问路径/user/login完毕，耗时：343ms
+2023-07-30 10:16:28.944 [http-nio-8888-exec-7] INFO 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/user/login 方法入参: 
+2023-07-30 10:16:28.948 [http-nio-8888-exec-7] INFO 
+                com.toughenflat.chatai.filter.ChannelFilter - ip127.0.0.1, 访问路径/user/login完毕，耗时：4ms
+2023-07-30 10:16:42.841 [http-nio-8888-exec-9] INFO 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/user/login 方法入参: 
+2023-07-30 10:16:42.845 [http-nio-8888-exec-9] INFO 
+                com.toughenflat.chatai.filter.ChannelFilter - ip127.0.0.1, 访问路径/user/login完毕，耗时：4ms
+2023-07-30 10:19:22.533 [http-nio-8888-exec-1] INFO 
+                com.toughenflat.chatai.utils.RequestWrapper - ip127.0.0.1, 访问路径/user/login 方法入参: {
+  "code": "1111111111",
+  "nickname": "2222222222",
+  "avatar": "3333333333",
+  "loginType": 1
+}
+2023-07-30 10:19:43.544 [http-nio-8888-exec-1] INFO 
+                com.toughenflat.chatai.filter.ChannelFilter - ip127.0.0.1, 访问路径/user/login完毕，耗时：21011ms
+2023-07-30 10:29:03.341 [scheduling-1] INFO 
+                c.t.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-30 10:29:03.351 [scheduling-1] INFO 
+                c.t.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-30 10:40:04.438 [SpringContextShutdownHook] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2023-07-30 10:40:04.444 [SpringContextShutdownHook] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'queueThreadPool'
+2023-07-30 10:40:04.446 [SpringContextShutdownHook] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-30 10:40:04.450 [SpringContextShutdownHook] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-30 11:10:23.325 [main] INFO 
+                com.toughenflat.chatai.FunAiApplication - Starting FunAiApplication on WIN-4HIBGFKV5FD with PID 19924 (C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master)
+2023-07-30 11:10:23.328 [main] INFO 
+                com.toughenflat.chatai.FunAiApplication - The following profiles are active: dev
+2023-07-30 11:10:24.695 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-07-30 11:10:24.699 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-07-30 11:10:24.780 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50ms. Found 0 repository interfaces.
+2023-07-30 11:10:25.219 [main] INFO 
+                o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-30 11:10:25.845 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-07-30 11:10:25.870 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-07-30 11:10:25.871 [main] INFO 
+                org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-30 11:10:25.872 [main] INFO 
+                org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2023-07-30 11:10:26.043 [main] INFO 
+                o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-30 11:10:26.043 [main] INFO 
+                org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2636 ms
+2023-07-30 11:10:26.533 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-30 11:10:26.743 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-30 11:10:27.217 [main] INFO 
+                com.toughenflat.chatai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+2023-07-30 11:10:27.218 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
+2023-07-30 11:10:28.184 [main] INFO 
+                s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-07-30 11:10:28.582 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-07-30 11:10:28.621 [main] INFO 
+                s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-07-30 11:10:28.642 [main] INFO 
+                s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-07-30 11:10:28.694 [main] INFO 
+                s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-07-30 11:10:28.851 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addSessionUsingPOST_1
+2023-07-30 11:10:28.976 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2023-07-30 11:10:28.978 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getSseEmitterUsingGET_1
+2023-07-30 11:10:29.053 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-07-30 11:10:29.089 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-07-30 11:10:29.094 [main] INFO 
+                com.toughenflat.chatai.FunAiApplication - Started FunAiApplication in 6.655 seconds (JVM running for 12.633)
+2023-07-30 11:10:57.577 [scheduling-1] INFO 
+                c.t.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-30 11:10:57.650 [scheduling-1] INFO 
+                c.t.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-30 12:10:50.109 [scheduling-1] INFO 
+                c.t.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-30 12:10:50.116 [scheduling-1] INFO 
+                c.t.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-30 13:10:50.085 [scheduling-1] INFO 
+                c.t.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-30 13:10:50.124 [scheduling-1] INFO 
+                c.t.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-30 14:10:50.162 [scheduling-1] INFO 
+                c.t.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-30 14:10:50.178 [scheduling-1] INFO 
+                c.t.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-30 15:10:50.123 [scheduling-1] INFO 
+                c.t.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-30 15:10:50.129 [scheduling-1] INFO 
+                c.t.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-30 16:10:50.125 [scheduling-1] INFO 
+                c.t.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-30 16:10:50.130 [scheduling-1] INFO 
+                c.t.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-30 17:10:49.076 [scheduling-1] INFO 
+                c.t.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-30 17:10:49.080 [scheduling-1] INFO 
+                c.t.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-30 18:10:49.061 [scheduling-1] INFO 
+                c.t.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-30 18:10:49.065 [scheduling-1] INFO 
+                c.t.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-30 19:10:49.079 [scheduling-1] INFO 
+                c.t.chatai.service.impl.AdminApiKeyServiceImpl - 加载AdminApiKey库缓存成功！, 有效的openai的apikey数量:1
+2023-07-30 19:10:49.082 [scheduling-1] INFO 
+                c.t.chatai.service.impl.PromptServiceImpl - 加载Prompt库缓存成功！, topicCache size:17, typeCache size: 2
+2023-07-30 19:26:57.651 [SpringContextShutdownHook] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2023-07-30 19:26:57.655 [SpringContextShutdownHook] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'queueThreadPool'
+2023-07-30 19:26:57.656 [SpringContextShutdownHook] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-30 19:26:57.659 [SpringContextShutdownHook] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
