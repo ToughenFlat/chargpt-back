@@ -1,9 +1,5 @@
 package com.toughenflat.chatai.api.openai.constant;
 
-/**
- * @Author: huangpenglong
- * @Date: 2023/3/28 0:11
- */
 public class OpenAIConst {
     public static final String HOST = "https://api.openai.com/";
     public static final String CHATGPT_MAPPING = "v1/chat/completions";

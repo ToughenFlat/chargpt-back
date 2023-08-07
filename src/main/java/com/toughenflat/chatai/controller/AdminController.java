@@ -6,10 +6,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
-/**
- * @Author: huangpenglong
- * @Date: 2023/4/10 23:59。
- */
 @RestController
 @RequestMapping("/admin")
 @CrossOrigin

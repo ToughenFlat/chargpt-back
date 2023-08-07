@@ -1,4 +1,4 @@
-package com.toughenflat.chatai.sse;
+package com.toughenflat.chatai.websocket;
 
 import cn.hutool.json.JSONUtil;
 import com.toughenflat.chatai.api.openai.enums.OpenAiRespError;
@@ -10,24 +10,23 @@ import okhttp3.ResponseBody;
 import okhttp3.sse.EventSource;
 import okhttp3.sse.EventSourceListener;
 import org.springframework.util.StringUtils;
-import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 
+import javax.websocket.Session;
 import java.util.Objects;
 
+/**
+ * 描述：OpenAI流式输出Socket接收
+ */
 @Slf4j
-public class OpenAIOneShotChatSSEListener extends EventSourceListener {
+public class OpenAIWebSocketEventSourceListener extends EventSourceListener {
     private static final String DONE_SIGNAL = "[DONE]";
 
-    private String userId;
+    private Session session;
 
-    private SseEmitter sseEmitter;
-
-    public OpenAIOneShotChatSSEListener(SseEmitter sseEmitter, String userId) {
-        this.sseEmitter = sseEmitter;
-        this.userId = userId;
+    public OpenAIWebSocketEventSourceListener(Session session) {
+        this.session = session;
     }
 
-    @SneakyThrows
     @Override
     public void onOpen(EventSource eventSource, Response response) {
         log.info("OpenAI建立sse连接...");
@@ -38,11 +37,7 @@ public class OpenAIOneShotChatSSEListener extends EventSourceListener {
     public void onEvent(EventSource eventSource, String id, String type, String data) {
         if (data.equals(DONE_SIGNAL)) {
             log.info("OpenAI返回数据结束");
-            sseEmitter.send(SseEmitter.event()
-                    .id(DONE_SIGNAL)
-                    .data(DONE_SIGNAL)
-                    .reconnectTime(3000)
-            );
+            session.getBasicRemote().sendText(DONE_SIGNAL);
             return;
         }
         log.info(data);
@@ -59,13 +54,15 @@ public class OpenAIOneShotChatSSEListener extends EventSourceListener {
         content = content.replace(" ", "「`」");
         content = content.replace("\n", "「·」");
         content = content.replace("\t", "「~」");
-        sseEmitter.send(SseEmitter.event().data(content).reconnectTime(3000));
+        session.getBasicRemote().sendText(content);
     }
+
 
     @Override
     public void onClosed(EventSource eventSource) {
         log.info("OpenAI关闭sse连接...");
     }
+
 
     @SneakyThrows
     @Override
@@ -75,23 +72,14 @@ public class OpenAIOneShotChatSSEListener extends EventSourceListener {
             eventSource.cancel();
             return;
         }
-
         ResponseBody body = response.body();
         if (Objects.nonNull(body)) {
             OpenAiRespError openAiRespError = OpenAiRespError.get(response.code());
             log.error("OpenAI  sse连接异常data：{}，异常：{}", body.string(), openAiRespError.msg);
-            sseEmitter.send(SseEmitter.event()
-                    .id("error")
-                    .data(openAiRespError.msg)
-                    .reconnectTime(3000));
+            session.getBasicRemote().sendText(openAiRespError.msg);
         } else {
             log.error("OpenAI  sse连接异常data：{}，异常：{}", response, t);
         }
-        sseEmitter.send(SseEmitter.event()
-                .id(DONE_SIGNAL)
-                .data(DONE_SIGNAL)
-                .reconnectTime(3000));
-
         response.close();
         eventSource.cancel();
     }

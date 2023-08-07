@@ -9,10 +9,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * @Author: huangpenglong
- * @Date: 2023/3/17 22:12
- */
 @Service
 public class SessionChatRecordServiceImpl
         extends ServiceImpl<SessionChatRecordMapper, SessionChatRecordEntity>

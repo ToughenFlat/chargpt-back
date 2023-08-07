@@ -92,7 +92,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.toughenflat.chatai.FunAiApplication.main(FunAiApplication.java:15)
+	at com.toughenflat.chatai.ChatAiApplication.main(FunAiApplication.java:15)
 Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -143,7 +143,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.toughenflat.chatai.FunAiApplication.main(FunAiApplication.java:15)
+	at com.toughenflat.chatai.ChatAiApplication.main(FunAiApplication.java:15)
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userApiKeyServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userApiKeyMapper' defined in file [C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes\com\gzhu\funai\mapper\UserApiKeyMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -638,7 +638,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.toughenflat.chatai.FunAiApplication.main(FunAiApplication.java:15)
+	at com.toughenflat.chatai.ChatAiApplication.main(FunAiApplication.java:15)
 Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -691,7 +691,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.toughenflat.chatai.FunAiApplication.main(FunAiApplication.java:15)
+	at com.toughenflat.chatai.ChatAiApplication.main(FunAiApplication.java:15)
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userApiKeyServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userApiKeyMapper' defined in file [C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes\com\gzhu\funai\mapper\UserApiKeyMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -787,7 +787,7 @@ java.lang.IllegalStateException: Failed to execute ApplicationRunner
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.toughenflat.chatai.FunAiApplication.main(FunAiApplication.java:15)
+	at com.toughenflat.chatai.ChatAiApplication.main(FunAiApplication.java:15)
 Caused by: java.lang.NullPointerException: null
 	at com.toughenflat.chatai.init.InitProject.run(InitProject.java:23)
 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:775)
@@ -875,7 +875,7 @@ java.lang.IllegalStateException: Failed to execute ApplicationRunner
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.toughenflat.chatai.FunAiApplication.main(FunAiApplication.java:15)
+	at com.toughenflat.chatai.ChatAiApplication.main(FunAiApplication.java:15)
 Caused by: java.lang.NullPointerException: null
 	at com.toughenflat.chatai.init.InitProject.run(InitProject.java:23)
 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:775)
@@ -1045,7 +1045,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.toughenflat.chatai.FunAiApplication.main(FunAiApplication.java:15)
+	at com.toughenflat.chatai.ChatAiApplication.main(FunAiApplication.java:15)
 Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -1103,7 +1103,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.toughenflat.chatai.FunAiApplication.main(FunAiApplication.java:15)
+	at com.toughenflat.chatai.ChatAiApplication.main(FunAiApplication.java:15)
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userApiKeyServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userApiKeyMapper' defined in file [C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes\com\gzhu\funai\mapper\UserApiKeyMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -1281,7 +1281,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.toughenflat.chatai.FunAiApplication.main(FunAiApplication.java:15)
+	at com.toughenflat.chatai.ChatAiApplication.main(FunAiApplication.java:15)
 Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -1334,7 +1334,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.toughenflat.chatai.FunAiApplication.main(FunAiApplication.java:15)
+	at com.toughenflat.chatai.ChatAiApplication.main(FunAiApplication.java:15)
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userApiKeyServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userApiKeyMapper' defined in file [C:\Users\Administrator\Desktop\HBuilderProjects\ChatGPT-Java-FunAi-master\target\classes\com\gzhu\funai\mapper\UserApiKeyMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -1430,7 +1430,7 @@ java.lang.IllegalStateException: Failed to execute ApplicationRunner
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.toughenflat.chatai.FunAiApplication.main(FunAiApplication.java:15)
+	at com.toughenflat.chatai.ChatAiApplication.main(FunAiApplication.java:15)
 Caused by: java.lang.NullPointerException: null
 	at com.toughenflat.chatai.init.InitProject.run(InitProject.java:23)
 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:775)
@@ -1832,7 +1832,7 @@ java.lang.IllegalStateException: Failed to execute ApplicationRunner
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.toughenflat.chatai.FunAiApplication.main(FunAiApplication.java:15)
+	at com.toughenflat.chatai.ChatAiApplication.main(FunAiApplication.java:15)
 Caused by: java.lang.NullPointerException: null
 	at com.toughenflat.chatai.init.InitProject.run(InitProject.java:28)
 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:775)
@@ -1922,3 +1922,212 @@ java.lang.NullPointerException: null
                 com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/108.160.163.116:443
 2023-07-30 19:10:49.078 [async-service-2] ERROR
                 com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/157.240.11.40:443
+2023-08-01 17:50:22.843 [async-service-2] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/118.184.78.78:443
+2023-08-01 17:50:22.873 [main] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/118.184.78.78:443
+2023-08-01 18:23:37.589 [http-nio-8888-exec-3] ERROR
+                c.toughenflat.chatai.global.GlobalExceptionHandler - 数据校验出现问题微信昵称，异常类型：class org.springframework.web.bind.MethodArgumentNotValidException
+2023-08-01 18:29:12.808 [http-nio-8888-exec-5] ERROR
+                c.toughenflat.chatai.global.GlobalExceptionHandler - 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'fun_ai.wx_system_key' doesn't exist
+### The error may exist in com/toughenflat/chatai/mapper/WxSystemKeyMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT id,app_id,app_secret FROM wx_system_key WHERE id=?
+### Cause: java.sql.SQLSyntaxErrorException: Table 'fun_ai.wx_system_key' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'fun_ai.wx_system_key' doesn't exist
+2023-08-03 21:12:18.588 [async-service-2] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/157.240.10.32:443
+2023-08-03 21:12:18.598 [main] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/157.240.10.32:443
+2023-08-03 21:28:46.503 [http-nio-8888-exec-3] ERROR
+                c.toughenflat.chatai.global.GlobalExceptionHandler - null
+2023-08-03 21:29:34.671 [async-service-2] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/199.59.148.147:443
+2023-08-03 21:29:34.762 [main] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/199.59.148.147:443
+2023-08-03 21:33:09.997 [http-nio-8888-exec-1] ERROR
+                c.toughenflat.chatai.global.GlobalExceptionHandler - 数据校验出现问题微信头像Base64编码，异常类型：class org.springframework.web.bind.MethodArgumentNotValidException
+2023-08-03 21:40:04.899 [http-nio-8888-exec-3] ERROR
+                c.toughenflat.chatai.global.GlobalExceptionHandler - null
+2023-08-03 21:40:41.053 [http-nio-8888-exec-4] ERROR
+                c.toughenflat.chatai.global.GlobalExceptionHandler - null
+2023-08-03 21:45:10.484 [http-nio-8888-exec-6] ERROR
+                c.toughenflat.chatai.global.GlobalExceptionHandler - null
+2023-08-03 21:50:01.874 [async-service-2] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/108.160.172.208:443
+2023-08-03 21:50:01.888 [main] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/108.160.172.208:443
+2023-08-03 21:51:06.949 [http-nio-8888-exec-1] ERROR
+                c.toughenflat.chatai.global.GlobalExceptionHandler - null
+2023-08-03 21:53:54.047 [http-nio-8888-exec-8] ERROR
+                c.toughenflat.chatai.global.GlobalExceptionHandler - null
+2023-08-03 21:54:02.514 [http-nio-8888-exec-2] ERROR
+                c.toughenflat.chatai.global.GlobalExceptionHandler - null
+2023-08-03 21:54:44.631 [async-service-2] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/162.125.18.129:443
+2023-08-03 21:54:44.664 [main] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/162.125.18.129:443
+2023-08-03 21:55:05.376 [http-nio-8888-exec-2] ERROR
+                c.toughenflat.chatai.global.GlobalExceptionHandler - null
+2023-08-03 21:58:12.034 [async-service-2] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/202.160.129.36:443
+2023-08-03 21:58:12.063 [main] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/202.160.129.36:443
+2023-08-03 21:58:36.061 [http-nio-8888-exec-1] ERROR
+                c.toughenflat.chatai.global.GlobalExceptionHandler - null
+2023-08-03 22:02:44.013 [http-nio-8888-exec-3] ERROR
+                c.toughenflat.chatai.global.GlobalExceptionHandler - null
+2023-08-03 22:08:40.707 [main] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/103.246.246.144:443
+2023-08-03 22:08:40.721 [async-service-2] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/103.246.246.144:443
+2023-08-03 22:09:37.977 [http-nio-8888-exec-1] ERROR
+                c.toughenflat.chatai.global.GlobalExceptionHandler - 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'header' at row 1
+### The error may involve com.toughenflat.chatai.mapper.UserMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO user  ( id, openid,  session_key,   nickname,   header,   create_time,  update_time, level )  VALUES  ( ?, ?,  ?,   ?,   ?,   ?,  ?, ? )
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'header' at row 1
+; Data truncation: Data too long for column 'header' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'header' at row 1
+2023-08-03 22:11:04.007 [http-nio-8888-exec-2] ERROR
+                c.toughenflat.chatai.global.GlobalExceptionHandler - 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'header' at row 1
+### The error may involve com.toughenflat.chatai.mapper.UserMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO user  ( id, openid,  session_key,   nickname,   header,   create_time,  update_time, level )  VALUES  ( ?, ?,  ?,   ?,   ?,   ?,  ?, ? )
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'header' at row 1
+; Data truncation: Data too long for column 'header' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'header' at row 1
+2023-08-03 22:12:08.041 [async-service-2] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/108.160.162.104:443
+2023-08-03 22:12:08.072 [main] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/108.160.162.104:443
+2023-08-03 22:12:35.208 [http-nio-8888-exec-1] ERROR
+                c.toughenflat.chatai.global.GlobalExceptionHandler - 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'header' at row 1
+### The error may involve com.toughenflat.chatai.mapper.UserMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO user  ( id, openid,  session_key,   nickname,   header,   create_time,  update_time, level )  VALUES  ( ?, ?,  ?,   ?,   ?,   ?,  ?, ? )
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'header' at row 1
+; Data truncation: Data too long for column 'header' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'header' at row 1
+2023-08-03 22:14:01.903 [async-service-2] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/173.252.88.67:443
+2023-08-03 22:14:01.949 [main] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/173.252.88.67:443
+2023-08-03 23:14:01.213 [async-service-8] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/202.160.129.164:443
+2023-08-04 00:14:01.209 [async-service-10] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/104.31.142.88:443
+2023-08-04 01:14:01.211 [async-service-12] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/108.160.165.62:443
+2023-08-04 02:14:01.204 [async-service-14] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/31.13.82.169:443
+2023-08-04 03:14:01.190 [async-service-15] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/104.244.46.246:443
+2023-08-04 04:14:01.214 [async-service-2] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/128.121.243.107:443
+2023-08-04 05:13:47.262 [async-service-4] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/23.101.24.70:443
+2023-08-04 06:14:01.206 [async-service-6] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/66.220.149.32:443
+2023-08-04 07:14:01.191 [async-service-8] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/69.171.229.73:443
+2023-08-04 08:14:01.229 [async-service-10] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/168.143.162.42:443
+2023-08-04 21:55:04.980 [async-service-2] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/69.63.180.173:443
+2023-08-05 12:49:43.084 [async-service-2] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/69.30.25.21:443
+2023-08-05 13:49:42.079 [async-service-8] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/31.13.80.37:443
+2023-08-05 14:49:42.106 [async-service-10] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/67.15.129.210:443
+2023-08-05 15:49:42.130 [async-service-13] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/202.160.130.66:443
+2023-08-05 16:49:42.098 [async-service-7] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/59.24.3.173:443
+2023-08-05 17:49:42.100 [async-service-9] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/199.96.62.41:443
+2023-08-05 18:49:42.125 [async-service-11] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/211.104.160.39:443
+2023-08-05 19:49:42.073 [async-service-13] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/104.16.251.55:443
+2023-08-05 20:49:42.094 [async-service-3] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/199.59.150.44:443
+2023-08-05 21:49:42.118 [async-service-10] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/108.160.165.11:443
+2023-08-05 22:49:42.081 [async-service-14] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/69.63.187.12:443
+2023-08-05 23:49:42.176 [async-service-8] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/104.244.43.228:443
+2023-08-06 00:49:42.095 [async-service-5] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/31.13.95.34:443
+2023-08-06 01:49:42.085 [async-service-7] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/209.95.56.60:443
+2023-08-06 02:49:42.089 [async-service-9] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/157.240.8.50:443
+2023-08-06 03:49:42.071 [async-service-12] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/118.107.180.216:443
+2023-08-06 04:49:42.058 [async-service-13] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/4.78.139.50:443
+2023-08-06 05:49:42.072 [async-service-15] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/69.171.247.71:443
+2023-08-06 06:49:42.091 [async-service-2] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/104.244.43.57:443
+2023-08-06 07:49:42.097 [async-service-3] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/157.240.17.41:443
+2023-08-06 08:49:42.086 [async-service-5] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/69.30.25.21:443
+2023-08-06 09:49:42.097 [async-service-7] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/108.160.167.167:443
+2023-08-06 10:49:42.081 [async-service-9] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/103.252.114.11:443
+2023-08-06 11:49:42.089 [async-service-12] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/69.30.25.21:443
+2023-08-06 12:49:42.092 [async-service-1] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/104.244.43.52:443
+2023-08-06 13:49:42.085 [async-service-4] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/69.171.224.40:443
+2023-08-06 14:49:42.099 [async-service-6] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/128.242.250.155:443
+2023-08-06 15:49:42.082 [async-service-8] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/128.242.245.29:443
+2023-08-06 16:49:40.591 [async-service-10] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/104.244.46.93:443
+2023-08-06 17:49:40.610 [async-service-11] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/157.240.17.36:443
+2023-08-06 18:49:40.598 [async-service-14] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/199.59.150.12:443
+2023-08-06 19:49:40.591 [async-service-13] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/199.59.148.15:443
+2023-08-06 20:49:40.603 [async-service-1] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/157.240.12.36:443
+2023-08-06 21:49:40.613 [async-service-4] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/103.200.30.143:443
+2023-08-06 22:07:22.596 [http-nio-8888-exec-8] ERROR
+                c.toughenflat.chatai.global.GlobalExceptionHandler - java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+2023-08-06 22:07:22.740 [http-nio-8888-exec-8] ERROR
+                com.toughenflat.chatai.filter.ChannelFilter - java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+2023-08-06 22:49:40.579 [async-service-2] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/157.240.1.50:443
+2023-08-06 23:49:40.633 [async-service-3] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/104.244.43.6:443
+2023-08-07 00:49:40.582 [async-service-5] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/67.228.235.93:443
+2023-08-07 01:49:34.117 [async-service-11] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/4.78.139.54:443
+2023-08-07 02:49:40.627 [async-service-14] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/128.242.240.244:443
+2023-08-07 03:49:40.589 [async-service-13] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/173.252.248.244:443
+2023-08-07 04:49:40.603 [async-service-2] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/208.31.254.33:443
+2023-08-07 05:49:40.627 [async-service-3] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/122.10.85.4:443
+2023-08-07 06:49:34.129 [async-service-8] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/162.125.32.13:443
+2023-08-07 07:49:40.622 [async-service-7] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/88.191.249.183:443
+2023-08-07 20:50:49.059 [async-service-2] ERROR
+                com.toughenflat.chatai.api.openai.ChatGPTApi - okHttpClient异常! Failed to connect to api.openai.com/202.160.129.37:443

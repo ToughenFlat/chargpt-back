@@ -27,9 +27,8 @@ public class UserLoginInterceptor implements HandlerInterceptor {
         String userId;
         String userName;
         boolean tokenExpired;
-
         try {
-            // 验证过程只要token是非法的，会自动抛异常
+            // 验证过程只要token是非法的, 会自动抛异常
             userId = JwtUtil.getUserId(token);
             userName = JwtUtil.getUserName(token);
             tokenExpired = JwtUtil.isTokenExpired(token);

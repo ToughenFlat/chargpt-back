@@ -13,6 +13,7 @@ import com.toughenflat.chatai.exception.UsernameException;
 import com.toughenflat.chatai.handler.LoginHandler;
 import com.toughenflat.chatai.handler.impl.NormalLoginHandler;
 import com.toughenflat.chatai.handler.impl.VisitorLoginHandler;
+import com.toughenflat.chatai.handler.impl.WxLoginHandler;
 import com.toughenflat.chatai.redis.ChatRedisHelper;
 import com.toughenflat.chatai.redis.RedisKeys;
 import com.toughenflat.chatai.service.UserService;
@@ -39,10 +40,16 @@ import java.util.Map;
 public class UserServiceImpl extends ServiceImpl<UserMapper, UserEntity> implements UserService {
     @Resource
     private StringRedisTemplate stringRedisTemplate;
+
     @Resource
     private NormalLoginHandler normalLoginHandler;
+
+    @Resource
+    private WxLoginHandler wxLoginHandler;
+
     @Resource
     private VisitorLoginHandler visitorLoginHandler;
+
     @Resource
     private ChatRedisHelper chatRedisHelper;
 
@@ -60,7 +67,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, UserEntity> impleme
     @PostConstruct
     public void init() {
         loginHandlerMap.put(LoginType.NORMAL, normalLoginHandler);
-        loginHandlerMap.put(LoginType.WECHAT, normalLoginHandler);
+        loginHandlerMap.put(LoginType.WECHAT, wxLoginHandler);
         loginHandlerMap.put(LoginType.VISITOR, visitorLoginHandler);
     }
 

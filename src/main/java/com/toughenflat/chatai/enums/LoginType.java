@@ -4,10 +4,6 @@ import java.util.Arrays;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-/**
- * @Author: huangpenglong
- * @Date: 2023/4/26 17:05
- */
 public enum LoginType {
     /**
      *  登录类型：

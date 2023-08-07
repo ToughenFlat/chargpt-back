@@ -5,14 +5,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
-
 @EnableScheduling
-@SpringBootApplication(exclude = {org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration.class })
+@SpringBootApplication(exclude = {org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration.class})
 @MapperScan("com.toughenflat.chatai.mapper")
-public class FunAiApplication {
+public class ChatAiApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(FunAiApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(ChatAiApplication.class, args);
+    }
 
 }

@@ -27,6 +27,7 @@ import java.util.Map;
 
 @Service(value = "WxLoginHandler")
 public class WxLoginHandler implements LoginHandler {
+
     public static final String HOST = "https://api.weixin.qq.com/sns/jscode2session";
 
     private static final String MAP_KEY_USERNAME = "username";
@@ -56,35 +57,31 @@ public class WxLoginHandler implements LoginHandler {
             assert response.isSuccessful();
             String wxBody = response.body().string();
             JSONObject wxJsonBody = JSONObject.parseObject(wxBody);
-            Long errcode = wxJsonBody.getLong("errcode");
+            Integer errcode = wxJsonBody.getInteger("errcode");
             String openid = wxJsonBody.getString("openid");
             String sessionKey = wxJsonBody.getString("session_key");
             String unionid = wxJsonBody.getString("unionid");
 
-            // 微信登录凭证无效
-            if (errcode == 40029) {
-                loginMap.put("err", "登录认证失败");
-                return loginMap;
-            }
-            // API调用太频繁
-            if (errcode == 45011) {
-                loginMap.put("err", "系统繁忙, 请稍后再试");
-                return loginMap;
-            }
-            // 高风险用户被禁止登录
-            if (errcode == 40226) {
-                loginMap.put("err", "用户被禁止登录, 请联系管理员");
-                return loginMap;
-            }
-            // 系统繁忙, 稍后再试
-            if (errcode == -1) {
-                loginMap.put("err", "系统繁忙, 请稍后再试");
+            // 登录失败
+            if (errcode != null) {
+                switch (errcode) {
+                    case 40029:
+                        loginMap.put("err", "登录认证失败");
+                        break;
+                    case 45011:
+                    case -1:
+                        loginMap.put("err", "系统繁忙, 请稍后再试");
+                        break;
+                    case 40226:
+                        loginMap.put("err", "用户被禁止登录, 请联系管理员");
+                        break;
+                }
                 return loginMap;
             }
 
             // 登录成功, 存储用户信息返回数据
             LambdaQueryWrapper<UserEntity> userQuery = new LambdaQueryWrapper<>();
-            userQuery.eq(UserEntity::getUnionid, unionid);
+            userQuery.eq(UserEntity::getOpenid, openid);
             UserEntity userEntity = userService.getOne(userQuery);
             if (userEntity == null) {       // 新登录的用户
                 userEntity = UserEntity.builder()
@@ -100,7 +97,7 @@ public class WxLoginHandler implements LoginHandler {
                 userService.save(userEntity);
             } else {                    // 旧用户登录
                 UpdateWrapper<UserEntity> userUpdate = new UpdateWrapper<>();
-                userUpdate.eq("unionid", unionid);
+                userUpdate.eq("openid", openid);
                 userEntity.setNickname(loginSession.getLoginAcct());
                 userEntity.setHeader(loginSession.getAvatar());
                 userEntity.setSessionKey(sessionKey);

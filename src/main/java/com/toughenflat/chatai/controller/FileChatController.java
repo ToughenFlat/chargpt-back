@@ -28,10 +28,6 @@ import javax.validation.Valid;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-/**
- * @author zxw
- * @Desriiption: 文件对话
- */
 @RestController
 @CrossOrigin
 @Slf4j
@@ -55,6 +51,7 @@ public class FileChatController {
 
     /**
      * 获取SSE连接，返回sseID给前端
+     *
      * @return
      */
     @GetMapping("/chatFile/getSseEmitter")
@@ -83,12 +80,13 @@ public class FileChatController {
     }
 
     /**
-     *  上传文件并生成总结内容
+     * 上传文件并生成总结内容
+     *
      * @param req
      * @return
      */
     @PostMapping("/file/chatPdfUpload")
-    public ReturnResult uploadFile(ChatWithFileRequest req){
+    public ReturnResult uploadFile(ChatWithFileRequest req) {
 
         if (ObjectUtils.isEmpty(req.getFile()) || req.getFile().getSize() <= 0 || req.getUserId() == null) {
             return ReturnResult.error().codeAndMessage(ResultCode.EMPTY_PARAM);
@@ -99,13 +97,13 @@ public class FileChatController {
         String apiKey = userApiKeyEntity != null && !StringUtils.isEmpty(userApiKeyEntity.getApikey())
                 ? userApiKeyEntity.getApikey()
                 : adminApiKeyService.roundRobinGetByType(ApiType.OPENAI);
-        if(apiKey == null){
+        if (apiKey == null) {
             return ReturnResult.error().codeAndMessage(ResultCode.ADMIN_APIKEY_NULL);
         }
 
         ChatGPTReq gptReq = ChatGPTReq.builder().model(OpenAIConst.MODEL_NAME_CHATGPT_3_5).build();
         String result = fileChatService.uploadFile(req.getFile(), req.getUserId(), apiKey, gptReq, usePinecone);
-        if(StringUtils.isEmpty(result)){
+        if (StringUtils.isEmpty(result)) {
             return ReturnResult.error().message(ResultCode.UPLOAD_FILE_ERROR.msg);
         }
 
@@ -113,14 +111,15 @@ public class FileChatController {
     }
 
     /**
-     *  文件对话
+     * 文件对话
+     *
      * @param req
      * @return
      */
     @PostMapping("/file/chatWithFile")
-    public ReturnResult chatWithFile(@RequestBody @Valid SessionChatRequest req){
+    public ReturnResult chatWithFile(@RequestBody @Valid SessionChatRequest req) {
 
-        if(StringUtils.isEmpty(req.getMessage()) || req.getUserId() == null  || req.getSessionId() == null){
+        if (StringUtils.isEmpty(req.getMessage()) || req.getUserId() == null || req.getSessionId() == null) {
             return ReturnResult.error().codeAndMessage(ResultCode.EMPTY_PARAM);
         }
 
@@ -129,12 +128,12 @@ public class FileChatController {
         String apiKey = userApiKeyEntity != null && !StringUtils.isEmpty(userApiKeyEntity.getApikey())
                 ? userApiKeyEntity.getApikey()
                 : adminApiKeyService.getBestByType(ApiType.OPENAI);
-        if(apiKey == null){
+        if (apiKey == null) {
             return ReturnResult.error().codeAndMessage(ResultCode.ADMIN_APIKEY_NULL);
         }
 
         SessionType sessionType = SessionType.get(req.getSessionType());
-        ChatGPTReq gptReq  = ChatGPTReq.builder()
+        ChatGPTReq gptReq = ChatGPTReq.builder()
                 .model(OpenAIConst.MODEL_NAME_CHATGPT_3_5)
                 .max_tokens(OpenAIConst.MAX_TOKENS - sessionType.maxContextToken)
                 .build();
@@ -142,21 +141,22 @@ public class FileChatController {
         ChatGPTResp resp = fileChatService.chatWithFile(
                 req.getUserId(), req.getSessionId(), req.getMessage(), apiKey, gptReq, usePinecone);
 
-        if(resp == null){
+        if (resp == null) {
             return ReturnResult.error();
         }
         return ReturnResult.ok().data(NAME_MESSAGE, resp.getMessage());
     }
 
     /**
-     *  文件对话,流式
+     * 文件对话,流式
+     *
      * @param req
      * @return
      */
     @PostMapping(path = "/file/streamChatWithFile")
-    public ReturnResult streamChatWithFile(@RequestBody @Valid StreamSessionChatRequest req){
+    public ReturnResult streamChatWithFile(@RequestBody @Valid StreamSessionChatRequest req) {
 
-        if(StringUtils.isEmpty(req.getMessage()) || req.getUserId() == null  || req.getSessionId() == null || req.getSseEmitterId() == null){
+        if (StringUtils.isEmpty(req.getMessage()) || req.getUserId() == null || req.getSessionId() == null || req.getSseEmitterId() == null) {
             return ReturnResult.error().codeAndMessage(ResultCode.EMPTY_PARAM);
         }
 
@@ -165,7 +165,7 @@ public class FileChatController {
         String apiKey = userApiKeyEntity != null && !StringUtils.isEmpty(userApiKeyEntity.getApikey())
                 ? userApiKeyEntity.getApikey()
                 : adminApiKeyService.getBestByType(ApiType.OPENAI);
-        if(apiKey == null){
+        if (apiKey == null) {
             return ReturnResult.error().codeAndMessage(ResultCode.ADMIN_APIKEY_NULL);
         }
 
@@ -176,7 +176,7 @@ public class FileChatController {
 
         // 获取指定的sseEmitter, 将响应信息通过sseEmitter发送出去
         SseEmitter sseEmitter = sseEmitterMap.get(req.getSseEmitterId());
-        if(sseEmitter == null){
+        if (sseEmitter == null) {
             return ReturnResult.error();
         }
 
@@ -189,15 +189,16 @@ public class FileChatController {
     }
 
     /**
-     *  删除索引
+     * 删除索引
+     *
      * @param userId
      * @return
      */
     @DeleteMapping("/file/dropCollection")
     public ReturnResult dropCollection(@RequestParam(value = "userId") String userId,
-                                       @RequestParam(value = "sessionId") Integer sessionId){
+                                       @RequestParam(value = "sessionId") Integer sessionId) {
 
-        if(StringUtils.isEmpty(userId) && StringUtils.isEmpty(sessionId)){
+        if (StringUtils.isEmpty(userId) && StringUtils.isEmpty(sessionId)) {
             return ReturnResult.error().codeAndMessage(ResultCode.EMPTY_PARAM);
         }
 

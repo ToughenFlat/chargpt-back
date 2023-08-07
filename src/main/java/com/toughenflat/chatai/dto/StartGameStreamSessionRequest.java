@@ -15,7 +15,7 @@ import org.hibernate.validator.constraints.Length;
 @NoArgsConstructor
 public class StartGameStreamSessionRequest {
 
-    @Length(max = 2500, message = "消息不能超过2500字！")
+    @Length(max = 2500, message = "消息不能超过2500字!")
     private String message;
 
     @JsonProperty("user_id")

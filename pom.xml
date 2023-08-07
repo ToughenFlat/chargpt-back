@@ -9,11 +9,11 @@
 		<relativePath/>
 	</parent>
 
-	<groupId>com.gzhu</groupId>
-	<artifactId>funai</artifactId>
+	<groupId>com.toughenflat</groupId>
+	<artifactId>chatai</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>funai</name>
-	<description>Fun AI</description>
+	<name>chatai</name>
+	<description>Chat AI</description>
 	<packaging>war</packaging>
 
 
@@ -51,6 +51,11 @@
 
 	<!--添加项目所需的依赖-->
 	<dependencies>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-websocket</artifactId>
+		</dependency>
 
 		<!--mybatis-plus -->
 		<dependency>

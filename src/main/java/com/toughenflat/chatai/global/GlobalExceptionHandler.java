@@ -9,10 +9,6 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-/**
- * @Author: huangpenglong
- * @Date: 2023/3/9 16:42
- */
 @Slf4j              // logback记录日志
 @ControllerAdvice   // 可对controller中被 @RequestMapping注解的方法加一些逻辑处理。最常用的就是异常处理
 public class GlobalExceptionHandler {
@@ -38,6 +34,7 @@ public class GlobalExceptionHandler {
     @ResponseBody
     public ReturnResult exception(BaseException e) {
         log.error(e.getMessage());
+        e.printStackTrace();
         return ReturnResult.error().code(e.getCode()).message(e.getMsg());
     }
 
@@ -45,6 +42,7 @@ public class GlobalExceptionHandler {
     @ResponseBody
     public ReturnResult exception(Exception e) {
         log.error(e.getMessage());
+        e.printStackTrace();
         return ReturnResult.error();
     }
 }

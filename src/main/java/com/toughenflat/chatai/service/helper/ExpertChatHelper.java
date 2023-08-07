@@ -11,11 +11,6 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 
-/**
- * @Author :wuxiaodong
- * @Date: 2023/4/24 19:18
- * @Description:会话名拆解、prompt构建、持久化聊天记录这些逻辑
- */
 @Component
 public class ExpertChatHelper {
     @Resource

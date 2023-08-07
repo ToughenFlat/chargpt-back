@@ -3,11 +3,6 @@ package com.toughenflat.chatai.exception;
 import com.toughenflat.chatai.utils.ReturnResult;
 import lombok.Data;
 
-/**
- * @Author: huangpenglong
- * @Date: 2023/3/28 0:39
- */
-
 @Data
 public class BaseException extends RuntimeException {
 

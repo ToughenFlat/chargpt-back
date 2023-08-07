@@ -71,10 +71,10 @@ public class UserController {
         // 随机产生4位数验证码
         String code = VerificationCodeGenerator.generateCode(4);
         stringRedisTemplate.opsForValue().set(
-                String.format(RedisKeys.USER_REGISTER_CODE ,request.getPhone()) ,code,2, TimeUnit.MINUTES);
+                String.format(RedisKeys.USER_REGISTER_CODE, request.getPhone()), code, 2, TimeUnit.MINUTES);
 
         // 发送验证码
-        return smsComponent.send(request.getPhone(),code) ? ReturnResult.ok() : ReturnResult.error().message("发送验证码错误");
+        return smsComponent.send(request.getPhone(), code) ? ReturnResult.ok() : ReturnResult.error().message("发送验证码错误");
     }
 
     /**
@@ -95,7 +95,7 @@ public class UserController {
         }
 
         // 删除验证码
-        stringRedisTemplate.delete(String.format(RedisKeys.USER_REGISTER_CODE ,req.getPhone()));
+        stringRedisTemplate.delete(String.format(RedisKeys.USER_REGISTER_CODE, req.getPhone()));
 
         //验证码通过，真正注册
         UserEntity register = userService.register(req);
@@ -107,18 +107,18 @@ public class UserController {
         log.info("号码{}注册成功，已自动登录！", req.getPhone());
         return ReturnResult.ok().data(userService.login(
                 LoginSession.builder()
-                    .loginAcct(req.getUserName())
-                    .password(req.getPassword())
-                    .loginType(LoginType.NORMAL)
-                    .ip(request.getRemoteAddr())
-                    .build()
+                        .loginAcct(req.getUserName())
+                        .password(req.getPassword())
+                        .loginType(LoginType.NORMAL)
+                        .ip(request.getRemoteAddr())
+                        .build()
         ));
     }
 
 
     /**
-    * 微信登录
-    * */
+     * 微信登录
+     */
     @PostMapping("/login")
     public ReturnResult login(@RequestBody @Valid UserLoginRequest loginRequest, HttpServletRequest request) {
         WxSystemKeyEntity wxSystemKey = wxSystemKeyService.findAll();
@@ -142,9 +142,9 @@ public class UserController {
     }
 
     /**
-    * 退出登录。
-    * 前端：清除浏览器中关于本站的所有cookie,返回登录页
-    * */
+     * 退出登录。
+     * 前端：清除浏览器中关于本站的所有cookie,返回登录页
+     */
     @GetMapping("/logout/{userId}")
     public ReturnResult logout(@PathVariable("userId") String userId) {
         // 清除用户缓存
@@ -153,19 +153,19 @@ public class UserController {
     }
 
     /**
-    * 重置密码
-    * */
+     * 重置密码
+     */
     @PostMapping("/resetPwd")
     public ReturnResult resetPwd(@RequestBody @Valid UserResetPasswordRequest request) {
         boolean flag = userService.resetPwd(request);
-        return flag ? ReturnResult.ok():ReturnResult.error().codeAndMessage(ResultCode.USER_NOT_EXIST);
+        return flag ? ReturnResult.ok() : ReturnResult.error().codeAndMessage(ResultCode.USER_NOT_EXIST);
     }
 
     /**
      * 根据userid和typeNo获得第三方的APIKey
      */
     @PostMapping("/apiKey/get")
-    public ReturnResult getApiKey(@RequestBody @Valid UserApiKeyRequest req){
+    public ReturnResult getApiKey(@RequestBody @Valid UserApiKeyRequest req) {
         UserApiKeyEntity userApiKeyEntity = userApiKeyService.getByUserIdAndType(
                 req.getUserId(), ApiType.get(req.getApiTypeNo()));
         return ReturnResult.ok().data("api_key", userApiKeyEntity == null ? "" : userApiKeyEntity.getApikey());
@@ -175,7 +175,7 @@ public class UserController {
      * 根据唯一键 userId 和 type来决定插入还是更新数据
      */
     @PostMapping("/apiKey/insertOrUpdate")
-    public ReturnResult insertOrUpdateApiKey(@RequestBody @Valid UserApiKeyRequest req){
+    public ReturnResult insertOrUpdateApiKey(@RequestBody @Valid UserApiKeyRequest req) {
         UserApiKeyEntity userApiKeyEntity = UserApiKeyEntity.builder()
                 .apikey(req.getApiKey())
                 .type(req.getApiTypeNo())
@@ -189,9 +189,9 @@ public class UserController {
      * 条件查询用户列表
      */
     @PostMapping("/admin/getUserListByCondition/{limit}/{page}")
-    public ReturnResult getUserListByCondition(@RequestBody UserListRequest userListRequset, @PathVariable("limit") Long limit,@PathVariable("page") Long page) {
+    public ReturnResult getUserListByCondition(@RequestBody UserListRequest userListRequset, @PathVariable("limit") Long limit, @PathVariable("page") Long page) {
         IPage<UserEntity> iPage = userService.getUserListByCondition(userListRequset, limit, page);
-        return ReturnResult.ok().data("records",iPage.getRecords()).data("total",iPage.getTotal());
+        return ReturnResult.ok().data("records", iPage.getRecords()).data("total", iPage.getTotal());
     }
 
     /**
@@ -209,15 +209,16 @@ public class UserController {
     @PostMapping("/admin/changeLevel")
     public ReturnResult changeLevel(@RequestBody ChangeUserLevelRequest request) {
         // 不能修改游客的等级
-        if(UserLevel.VISITOR.levelNo.equals(request.getOriginalLevel())){
+        if (UserLevel.VISITOR.levelNo.equals(request.getOriginalLevel())) {
             return ReturnResult.error().message("不能修改游客的等级!");
         }
         boolean flag = userService.changeLevel(request.getUserId(), request.getLevel());
-        return flag ?  ReturnResult.ok() : ReturnResult.error();
+        return flag ? ReturnResult.ok() : ReturnResult.error();
     }
 
     /**
      * 添加用户建议
+     *
      * @Author :oujiajun
      * @Date: 2023/4/29 14:58
      */

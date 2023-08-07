@@ -11,11 +11,6 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-/**
- * @Author: huangpenglong
- * @Date: 2023/3/9 10:41
- */
-
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
@@ -40,7 +35,7 @@ public class SwaggerConfig {
                 .title("FunAI网站-API文档")
                 .description("本文档描述了FunAI接口的定义")
                 .version("1.0")
-                .contact(new Contact("hpl", "https://huangpengl.github.io/", "243031504@qq.com"))
+                .contact(new Contact("hpl", "https://huangpengl.github.io/", "1022176995@qq.com"))
                 .build();
     }
 

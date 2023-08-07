@@ -2,11 +2,6 @@ package com.toughenflat.chatai.api.openai.req;
 
 import lombok.Data;
 
-/**
- * @Author: huangpenglong
- * @Date: 2023/3/9 10:42
- */
-
 @Data
 public class ContextMessage {
     /**

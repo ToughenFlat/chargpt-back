@@ -26,7 +26,8 @@ public class UserFileUploadLimitInterceptor implements HandlerInterceptor {
     private ChatRedisHelper chatRedisHelper;
     private UserApiKeyService userApiKeyService;
     private UserService userService;
-    public UserFileUploadLimitInterceptor(ChatRedisHelper chatRedisHelper, UserApiKeyService userApiKeyService, UserService userService){
+
+    public UserFileUploadLimitInterceptor(ChatRedisHelper chatRedisHelper, UserApiKeyService userApiKeyService, UserService userService) {
         this.chatRedisHelper = chatRedisHelper;
         this.userApiKeyService = userApiKeyService;
         this.userService = userService;
@@ -43,21 +44,20 @@ public class UserFileUploadLimitInterceptor implements HandlerInterceptor {
             UserApiKeyEntity userApiKeyEntity = userApiKeyService.getByUserIdAndType(userId, ApiType.OPENAI);
 
             // 若用户没上传API-Key，则做限制
-            if(userApiKeyEntity == null || StringUtils.isEmpty(userApiKeyEntity.getApikey())){
+            if (userApiKeyEntity == null || StringUtils.isEmpty(userApiKeyEntity.getApikey())) {
                 int dailyFileUploadCount = this.chatRedisHelper.getDailyFileUploadCount(userId);
                 if (dailyFileUploadCount >= uLevel.dailyFileUploadLimit) {
                     log.info("已限制用户id为{}的PDF阅读功能，该用户使用次数为{}次", userId, dailyFileUploadCount);
                     String extraMsg = "";
-                    if(UserLevel.VISITOR.equals(uLevel)){
+                    if (UserLevel.VISITOR.equals(uLevel)) {
                         extraMsg = "请注册账号，获取更多使用额度~";
-                    }
-                    else if(UserLevel.NORMAL.equals(uLevel)){
+                    } else if (UserLevel.NORMAL.equals(uLevel)) {
                         extraMsg = "请联系管理员升级账号，获取更多使用额度~";
                     }
                     out(ReturnResult.error()
-                            .code(ResultCode.USER_FILE_UPLOAD_LIMITED.code)
-                            .message(ResultCode.USER_FILE_UPLOAD_LIMITED.msg + "已使用" + dailyFileUploadCount + "次。" + extraMsg),
-                        response);
+                                    .code(ResultCode.USER_FILE_UPLOAD_LIMITED.code)
+                                    .message(ResultCode.USER_FILE_UPLOAD_LIMITED.msg + "已使用" + dailyFileUploadCount + "次。" + extraMsg),
+                            response);
                     return false;
                 }
             }
@@ -75,7 +75,7 @@ public class UserFileUploadLimitInterceptor implements HandlerInterceptor {
 
         // 用户没有上传APIKey，那就做限制
         UserApiKeyEntity userApiKeyEntity = userApiKeyService.getByUserIdAndType(userId, ApiType.OPENAI);
-        if (userApiKeyEntity == null || StringUtils.isEmpty(userApiKeyEntity.getApikey())){
+        if (userApiKeyEntity == null || StringUtils.isEmpty(userApiKeyEntity.getApikey())) {
             int count = chatRedisHelper.incrDailyFileUploadCount(userId, 1);
             log.info("用户id为{}的当日文件上传次数为{}", userId, count);
         }

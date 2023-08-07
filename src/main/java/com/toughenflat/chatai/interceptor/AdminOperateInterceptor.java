@@ -21,7 +21,7 @@ public class AdminOperateInterceptor implements HandlerInterceptor {
 
         try {
             UserLevel uLevel = UserLevel.get(JwtUtil.getUserLevel(token));
-            if (!UserLevel.ADMIN.equals(uLevel)){
+            if (!UserLevel.ADMIN.equals(uLevel)) {
                 out(ReturnResult.error()
                         .code(ResultCode.ADMIN_OPERATE_FORBIDDEN.code)
                         .message(ResultCode.ADMIN_OPERATE_FORBIDDEN.msg), response);

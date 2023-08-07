@@ -26,7 +26,8 @@ public class UserChatLimitInterceptor implements HandlerInterceptor {
     private ChatRedisHelper chatRedisHelper;
     private UserApiKeyService userApiKeyService;
     private UserService userService;
-    public UserChatLimitInterceptor(ChatRedisHelper chatRedisHelper, UserApiKeyService userApiKeyService, UserService userService){
+
+    public UserChatLimitInterceptor(ChatRedisHelper chatRedisHelper, UserApiKeyService userApiKeyService, UserService userService) {
         this.chatRedisHelper = chatRedisHelper;
         this.userApiKeyService = userApiKeyService;
         this.userService = userService;
@@ -43,15 +44,14 @@ public class UserChatLimitInterceptor implements HandlerInterceptor {
             UserApiKeyEntity userApiKeyEntity = userApiKeyService.getByUserIdAndType(userId, ApiType.OPENAI);
 
             // 若用户没上传API-Key，则做限制
-            if(userApiKeyEntity == null || StringUtils.isEmpty(userApiKeyEntity.getApikey())){
+            if (userApiKeyEntity == null || StringUtils.isEmpty(userApiKeyEntity.getApikey())) {
                 int dailyChatCount = this.chatRedisHelper.getDailyChatCount(userId);
                 if (dailyChatCount >= uLevel.dailyChatLimit) {
                     log.info("已限制用户id为{}的聊天功能，该用户聊天次数为{}次", userId, dailyChatCount);
                     String extraMsg = "";
-                    if(UserLevel.VISITOR.equals(uLevel)){
+                    if (UserLevel.VISITOR.equals(uLevel)) {
                         extraMsg = "请注册账号，获取更多使用额度~";
-                    }
-                    else if(UserLevel.NORMAL.equals(uLevel)){
+                    } else if (UserLevel.NORMAL.equals(uLevel)) {
                         extraMsg = "请联系管理员升级账号，获取更多使用额度~";
                     }
                     out(ReturnResult.error()
@@ -74,7 +74,7 @@ public class UserChatLimitInterceptor implements HandlerInterceptor {
 
         // 用户没有上传APIKey，那就记录使用次数
         UserApiKeyEntity userApiKeyEntity = userApiKeyService.getByUserIdAndType(userId, ApiType.OPENAI);
-        if (userApiKeyEntity == null || StringUtils.isEmpty(userApiKeyEntity.getApikey())){
+        if (userApiKeyEntity == null || StringUtils.isEmpty(userApiKeyEntity.getApikey())) {
             int count = chatRedisHelper.incrDailyChatCount(userId, 1);
             log.info("用户id为{}的当日聊天次数为{}", userId, count);
         }

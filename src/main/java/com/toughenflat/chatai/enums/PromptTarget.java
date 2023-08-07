@@ -1,9 +1,5 @@
 package com.toughenflat.chatai.enums;
 
-/**
- * @Author: huangpenglong
- * @Date: 2023/4/17 0:20
- */
 public enum  PromptTarget {
 
     /**

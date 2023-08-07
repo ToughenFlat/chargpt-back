@@ -28,28 +28,19 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
-/**
- * @Author: huangpenglong / oujiajun
- * @Date: 2023/3/13 17:28
- */
-
 @Service
 @Slf4j
-public class ChatServiceImpl implements ChatService{
+public class ChatServiceImpl implements ChatService {
     /**
-         缓存某个会话的token总数不超过k的[会话窗口]
-         Ps: 关于Caffeine Cache可以参考https://www.cnblogs.com/rickiyang/p/11074158.html
-             1 expireAfterAccess(long, TimeUnit):在最后一次访问或者写入后开始计时，在指定的时间后过期。
-             假如一直有请求访问该key，那么这个缓存将一直不会过期。
-             2 expireAfterWrite(long, TimeUnit): 在最后一次写入缓存后开始计时，在指定的时间后过期。
-             3 expireAfter(Expiry): 自定义策略，过期时间由Expiry实现独自计算。
+     * 缓存某个会话的token总数不超过k的[会话窗口]
+     * Ps: 关于Caffeine Cache可以参考https://www.cnblogs.com/rickiyang/p/11074158.html
      */
-    private LoadingCache<Integer, Deque<SessionChatRecordEntity>> normalWindowRecordCache =
-            Caffeine.newBuilder().initialCapacity(1024)
-                    // 手动设置10分钟缓存过期，
-                    .expireAfterAccess(10L, TimeUnit.MINUTES)
-                    //缓存填充策略：同步加载。缓存中有则用，没有则调用loadWindowRecordCache获得value并存入缓存中
-                    .build(sessionId -> this.loadNormalWindowRecordCache(sessionId));
+    private LoadingCache<Integer, Deque<SessionChatRecordEntity>> normalWindowRecordCache = Caffeine.newBuilder()
+            .initialCapacity(1024)
+            // 手动设置10分钟缓存过期
+            .expireAfterAccess(10L, TimeUnit.MINUTES)
+            // 缓存填充策略: 同步加载. 缓存中有则用, 没有则调用loadWindowRecordCache获得value并存入缓存中
+            .build(sessionId -> this.loadNormalWindowRecordCache(sessionId));
 
     private LoadingCache<Integer, Deque<SessionChatRecordEntity>> gameWindowRecordCache =
             Caffeine.newBuilder().initialCapacity(1024)
@@ -80,11 +71,11 @@ public class ChatServiceImpl implements ChatService{
 
     @Override
     public void streamOneShotChat(String userId, ChatGPTReq chatGPTReq, String apiKey, SseEmitter sseEmitter) {
-
         ChatGPTApi.streamSessionReq(
                 chatGPTReq,
                 apiKey,
-                new OpenAIOneShotChatSSEListener(sseEmitter, userId));
+                new OpenAIOneShotChatSSEListener(sseEmitter, userId)
+        );
     }
 
     @Override
@@ -103,7 +94,7 @@ public class ChatServiceImpl implements ChatService{
         String originMsg = message;
         // 专家会话的问题拼上要回复的语言
         if (sessionType.equals(SessionType.EXPERT_CHAT)) {
-            message += "(用"+ expertChatHelper.getExpertChatLanguage(sessionId) +"回答)";
+            message += "(用" + expertChatHelper.getExpertChatLanguage(sessionId) + "回答)";
         }
         // 若[会话窗口]加入当前对话后，token总数一旦超过K，那就指定从第几个位置开始弹出记录。
         int askTokenNum = ChatGPTApi.getMessageTokenNum(message);
@@ -119,8 +110,8 @@ public class ChatServiceImpl implements ChatService{
         chatGPTReq.setMessages(askContentList);
         ChatGPTResp resp = ChatGPTApi.sessionReq(chatGPTReq, apiKey);
 
-        // 请求失败，则把刚刚的问题撤回
-        if(resp == null){
+        // 请求失败, 则把刚刚的问题撤回
+        if (resp == null) {
             windowRecords.pollLast();
             log.error("远方的ChatGPT对userId={}的用户在session_id={}的会话中应答失败！！");
             return null;
@@ -138,15 +129,14 @@ public class ChatServiceImpl implements ChatService{
                 sessionId, Role.ASSISTANT.name, resp.getMessage(), resp.getUsage().getCompletion_tokens());
 
         // 异步处理持久化和缓存更新
-        queueThreadPool.execute(()->{
+        queueThreadPool.execute(() -> {
             // 持久化数据
             sessionChatRecordService.saveBatch(ImmutableList.of(askRecord, replyRecord));
 
             // 更新[会话窗口]缓存数据。
-            if(sessionType.equals(SessionType.NORMAL_CHAT)) {
+            if (sessionType.equals(SessionType.NORMAL_CHAT)) {
                 normalWindowRecordCache.refresh(sessionId);
-            }
-            else{
+            } else {
                 gameWindowRecordCache.refresh(sessionId);
             }
         });
@@ -172,7 +162,7 @@ public class ChatServiceImpl implements ChatService{
         String originMsg = message;
         // 专家会话的问题拼上要回复的语言
         if (sessionType.equals(SessionType.EXPERT_CHAT)) {
-            message += "(用"+ expertChatHelper.getExpertChatLanguage(sessionId) +"回答)";
+            message += "(用" + expertChatHelper.getExpertChatLanguage(sessionId) + "回答)";
         }
         int askTokenNum = ChatGPTApi.getMessageTokenNum(message);
         int pollIndex = sessionType.equals(SessionType.NORMAL_CHAT) ? 0 : 1;
@@ -198,23 +188,24 @@ public class ChatServiceImpl implements ChatService{
         ChatGPTApi.streamSessionReq(
                 chatGPTReq,
                 apiKey,
-                new OpenAISessionChatSSEListener(sseEmitter,  askRecord, null, sessionType));
+                new OpenAISessionChatSSEListener(sseEmitter, askRecord, null, sessionType));
     }
 
     /**
      * 刷新缓存
+     *
      * @param sessionId
      */
     @Override
-    public void refreshWindowRecordCache(Integer sessionId){
+    public void refreshWindowRecordCache(Integer sessionId) {
 
         UserSessionEntity userSessionEntity = userSessionService.getById(sessionId);
-        if(userSessionEntity == null) {
+        if (userSessionEntity == null) {
             return;
         }
         SessionType sessionType = SessionType.get(userSessionEntity.getType());
 
-        switch (sessionType){
+        switch (sessionType) {
             case NORMAL_CHAT:
                 normalWindowRecordCache.refresh(sessionId);
                 break;
@@ -226,16 +217,16 @@ public class ChatServiceImpl implements ChatService{
         }
     }
 
-
     /**
      * 退出登录清除用户缓存
+     *
      * @param userId
      */
     @Override
     public void clearUserCache(String userId) {
         List<Integer> sessionIdList = userSessionService.list(
-                new QueryWrapper<UserSessionEntity>()
-                        .eq("user_id", userId))
+                        new QueryWrapper<UserSessionEntity>()
+                                .eq("user_id", userId))
                 .stream().map(UserSessionEntity::getSessionId).collect(Collectors.toList());
         for (Integer sessionId : sessionIdList) {
             windowRecordTokensCache.remove(sessionId);
@@ -251,25 +242,26 @@ public class ChatServiceImpl implements ChatService{
 
 
     /**
-     * 将最近的 [普通聊天] 记录加载到缓存中， 并且保证聊天对话的token总数不超过k
-     * @param sessionId
+     * 将最近的 [普通聊天] 记录加载到缓存中, 并且保证聊天对话的token总数不超过k
+     *
+     * @param sessionId 会话ID
      * @return Deque<SessionChatRecordEntity>
      */
-    private Deque<SessionChatRecordEntity> loadNormalWindowRecordCache(Integer sessionId){
+    private Deque<SessionChatRecordEntity> loadNormalWindowRecordCache(Integer sessionId) {
         List<SessionChatRecordEntity> sessionRecords = sessionChatRecordService.getSessionRecord(sessionId);
         Deque<SessionChatRecordEntity> windowRecords = new LinkedList<>();
 
-        if(CollectionUtils.isEmpty(sessionRecords)){
+        if (CollectionUtils.isEmpty(sessionRecords)) {
             return windowRecords;
         }
 
         int curSessionTokens = 0;
         int size = sessionRecords.size();
-        for(int i=size-1; i>=0; i--){
+        for (int i = size - 1; i >= 0; i--) {
             SessionChatRecordEntity record = sessionRecords.get(i);
             int tokenNum = record.getTokenNum();
             // 保证加上当前轮次的聊天对话时token总数不超过最大数量限制
-            if(curSessionTokens + tokenNum > SessionType.NORMAL_CHAT.maxContextToken){
+            if (curSessionTokens + tokenNum > SessionType.NORMAL_CHAT.maxContextToken) {
                 break;
             }
             windowRecords.offerFirst(record);
@@ -280,26 +272,27 @@ public class ChatServiceImpl implements ChatService{
     }
 
     /**
-     * 将最近的 [游戏/专家系统] 聊天记录加载到缓存中，并保留第一条聊天记录， 并且保证聊天对话的token总数不超过k
-     * @param sessionId
+     * 将最近的 [游戏/专家系统] 聊天记录加载到缓存中, 并保留第一条聊天记录, 并且保证聊天对话的token总数不超过k
+     *
+     * @param sessionId 会话ID
      * @return Deque<SessionChatRecordEntity>
      */
-    private Deque<SessionChatRecordEntity> loadGameWindowRecordCache(Integer sessionId){
+    private Deque<SessionChatRecordEntity> loadGameWindowRecordCache(Integer sessionId) {
         List<SessionChatRecordEntity> sessionRecords = sessionChatRecordService.getSessionRecord(sessionId);
         Deque<SessionChatRecordEntity> windowRecords = new LinkedList<>();
 
-        if(CollectionUtils.isEmpty(sessionRecords)){
+        if (CollectionUtils.isEmpty(sessionRecords)) {
             return windowRecords;
         }
 
         SessionChatRecordEntity firstRecord = sessionRecords.get(0);
         int curSessionTokens = firstRecord.getTokenNum();
         int size = sessionRecords.size();
-        for(int i=size-1; i>=1; i--){
+        for (int i = size - 1; i >= 1; i--) {
             SessionChatRecordEntity record = sessionRecords.get(i);
             int tokenNum = record.getTokenNum();
             // 保证加上当前轮次的聊天对话时token总数不超过K
-            if(curSessionTokens + tokenNum > SessionType.GAME_CHAT.maxContextToken){
+            if (curSessionTokens + tokenNum > SessionType.GAME_CHAT.maxContextToken) {
                 break;
             }
             windowRecords.offerFirst(record);
@@ -311,44 +304,43 @@ public class ChatServiceImpl implements ChatService{
     }
 
     /**
-     * 指定windowRecords， 从下标为index开始弹出多余聊天记录，保证当前窗口总token数curTokenNum不超过k
+     * 指定windowRecords, 从下标为index开始弹出多余聊天记录, 保证当前窗口总token数curTokenNum不超过k
+     *
      * @param windowRecords
      * @param curTokenNum
      * @param index
      * @return 弹出操作后剩余的窗口总token数
      */
     private int pollWindowRecordsKeepKToken(Deque<SessionChatRecordEntity> windowRecords,
-                                            int curTokenNum, int index, int maxTokenNum){
+                                            int curTokenNum, int index, int maxTokenNum) {
         // 下标为index前的记录先暂时弹出
         Deque<SessionChatRecordEntity> temp = new LinkedList<>();
-        while(!windowRecords.isEmpty() && index-- != 0){
+        while (!windowRecords.isEmpty() && index-- != 0) {
             temp.offerLast(windowRecords.pollFirst());
         }
 
         // 维护窗口记录
-        while(!windowRecords.isEmpty() &&  curTokenNum > maxTokenNum){
+        while (!windowRecords.isEmpty() && curTokenNum > maxTokenNum) {
             curTokenNum -= windowRecords.pollFirst().getTokenNum();
         }
 
         // 还原下标为index前的记录
-        while(!temp.isEmpty()){
+        while (!temp.isEmpty()) {
             windowRecords.offerFirst(temp.pollLast());
         }
         return curTokenNum;
     }
 
     /**
-     * 根据SessionType和sessionId获取带上下文窗口的聊天记录
-     * @param sessionType
-     * @param sessionId
+     * 根据sessionType和sessionId获取带上下文窗口的聊天记录
      */
-    private Deque<SessionChatRecordEntity> getWindowRecordsBySessionTypeAndId(SessionType sessionType, Integer sessionId){
-        switch (sessionType){
+    private Deque<SessionChatRecordEntity> getWindowRecordsBySessionTypeAndId(SessionType sessionType, Integer sessionId) {
+        switch (sessionType) {
             case NORMAL_CHAT:
                 return new LinkedList<>(normalWindowRecordCache.get(sessionId));
             case EXPERT_CHAT:
             case GAME_CHAT:
-                return  new LinkedList<>(gameWindowRecordCache.get(sessionId));
+                return new LinkedList<>(gameWindowRecordCache.get(sessionId));
             default:
         }
         return new LinkedList<>();

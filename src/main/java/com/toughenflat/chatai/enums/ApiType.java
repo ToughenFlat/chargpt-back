@@ -4,10 +4,6 @@ import java.util.Arrays;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-/**
- * @Author: huangpenglong
- * @Date: 2023/3/13 17:16
- */
 public enum ApiType {
     /**
      * 0: openai
@@ -25,18 +21,19 @@ public enum ApiType {
     public final String typeName;
     public final Integer typeNo;
 
-    ApiType(String typeName, Integer typeNo){
+    ApiType(String typeName, Integer typeNo) {
         this.typeName = typeName;
         this.typeNo = typeNo;
     }
 
     private static final Map<Integer, ApiType> MAP = Arrays.stream(values())
-            .collect(Collectors.toMap(item->item.typeNo, item->item));
+            .collect(Collectors.toMap(item -> item.typeNo, item -> item));
 
-    public static boolean contains(Integer type){
+    public static boolean contains(Integer type) {
         return MAP.containsKey(type);
     }
-    public static ApiType get(Integer type){
+
+    public static ApiType get(Integer type) {
         return MAP.get(type);
     }
 }

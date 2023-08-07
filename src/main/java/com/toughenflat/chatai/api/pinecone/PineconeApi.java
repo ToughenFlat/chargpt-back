@@ -16,10 +16,6 @@ import okhttp3.Response;
 
 import java.io.IOException;
 
-/**
- * @author zxw
- * @Desriiption: Pinecone数据库的api
- */
 @Slf4j
 public class PineconeApi {
     /**

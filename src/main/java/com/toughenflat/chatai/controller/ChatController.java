@@ -44,7 +44,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 
-
 /**
  * @Author: huangpenglong
  * @Date: 2023/3/9 15:44
@@ -59,38 +58,27 @@ public class ChatController {
 
     @Resource
     private ChatService chatService;
+
     @Resource
     private UserSessionService userSessionService;
+
     @Resource
     private SessionChatRecordService sessionChatRecordService;
+
     @Resource
     private FileService fileService;
+
     @Resource
     private AdminApiKeyService adminApiKeyService;
+
     @Resource
     private UserApiKeyService userApiKeyService;
+
     @Resource
     private ExpertChatHelper expertChatHelper;
 
-
-    @RequestMapping("/chat/test")
-    public ReturnResult testChatGPT() {
-        ChatGPTResp resp = ChatGPTApi.sessionReq(
-                ChatGPTReq.builder().messages(Arrays.asList(new ContextMessage(Role.USER.name, "请问如何评价秦始皇?"))).build(),
-                "");
-
-        if (resp != null) {
-            System.out.println(resp.getChoices().get(0).getMessage().toString());
-            return ReturnResult.ok().data(NAME_MESSAGE, resp.getMessage());
-        }
-        return ReturnResult.ok().data(NAME_MESSAGE, "success");
-    }
-
     /**
      * 调用openai的ChatGPT接口实现单论对话
-     *
-     * @param req
-     * @return
      */
     @PostMapping("/chat/oneShot")
     public ReturnResult oneShot(@RequestBody @Valid OneShotChatRequest req) {
@@ -101,13 +89,12 @@ public class ChatController {
         // 若用户上传了apikey则使用用户的，否则采用本系统的
         UserApiKeyEntity userApiKeyEntity = userApiKeyService.getByUserIdAndType(req.getUserId(), ApiType.OPENAI);
         String apiKey = userApiKeyEntity != null && !StringUtils.isEmpty(userApiKeyEntity.getApikey())
-                ? userApiKeyEntity.getApikey()
-                : adminApiKeyService.roundRobinGetByType(ApiType.OPENAI);
-        if(apiKey == null){
+                ? userApiKeyEntity.getApikey() : adminApiKeyService.roundRobinGetByType(ApiType.OPENAI);
+        if (apiKey == null) {
             return ReturnResult.error().codeAndMessage(ResultCode.ADMIN_APIKEY_NULL);
         }
         SessionType sessionType = SessionType.get(req.getSessionType());
-        ChatGPTReq gptReq  = ChatGPTReq.builder()
+        ChatGPTReq gptReq = ChatGPTReq.builder()
                 .model(OpenAIConst.MODEL_NAME_CHATGPT_3_5)
                 .messages(ImmutableList.of(new ContextMessage(Role.USER.name, req.getMessage())))
                 .max_tokens(OpenAIConst.MAX_TOKENS - sessionType.maxContextToken)
@@ -134,7 +121,7 @@ public class ChatController {
             return ReturnResult.error().codeAndMessage(ResultCode.EMPTY_PARAM);
         }
         SessionType type = SessionType.get(req.getType());
-        if(type == null){
+        if (type == null) {
             return ReturnResult.error().codeAndMessage(ResultCode.BAD_PARAM);
         }
 
@@ -142,7 +129,7 @@ public class ChatController {
         UserSessionEntity userSessionEntity = userSessionService.save(req.getUserId(), req.getSessionName(), type);
 
         // 若会话是专家领域创建会话后插入一条提示记录
-        if (userSessionEntity != null  && SessionType.EXPERT_CHAT.equals(type)) {
+        if (userSessionEntity != null && SessionType.EXPERT_CHAT.equals(type)) {
             expertChatHelper.handleSessionSystemRecord(userSessionEntity);
         }
         return userSessionEntity != null ? ReturnResult.ok() : ReturnResult.error();
@@ -150,9 +137,6 @@ public class ChatController {
 
     /**
      * 修改会话名
-     *
-     * @param req
-     * @return
      */
     @PostMapping("/chat/renameSession")
     public ReturnResult addSession(@RequestBody @Valid RenameSessionRequest req) {
@@ -165,9 +149,6 @@ public class ChatController {
 
     /**
      * 调用openai的ChatGPT接口实现多轮对话
-     *
-     * @param req
-     * @return
      */
     @PostMapping("/chat/session")
     public ReturnResult chatSession(@RequestBody @Valid SessionChatRequest req) {
@@ -180,12 +161,12 @@ public class ChatController {
         String apiKey = userApiKeyEntity != null && !StringUtils.isEmpty(userApiKeyEntity.getApikey())
                 ? userApiKeyEntity.getApikey()
                 : adminApiKeyService.roundRobinGetByType(ApiType.OPENAI);
-        if(apiKey == null){
+        if (apiKey == null) {
             return ReturnResult.error().codeAndMessage(ResultCode.ADMIN_APIKEY_NULL);
         }
 
         SessionType sessionType = SessionType.get(req.getSessionType());
-        ChatGPTReq gptReq  = ChatGPTReq.builder()
+        ChatGPTReq gptReq = ChatGPTReq.builder()
                 .model(OpenAIConst.MODEL_NAME_CHATGPT_3_5)
                 .max_tokens(OpenAIConst.MAX_TOKENS - sessionType.maxContextToken)
                 .build();
@@ -200,14 +181,11 @@ public class ChatController {
 
     /**
      * 获取用户的会话列表
-     *
-     * @param userId
-     * @return
      */
     @GetMapping("/chat/getSessionList/{userId}/{type}")
     public ReturnResult getSessionList(@PathVariable String userId, @PathVariable Integer type) {
         SessionType sessionType = SessionType.get(type);
-        if(sessionType == null){
+        if (sessionType == null) {
             return ReturnResult.error();
         }
         return ReturnResult.ok().data(
@@ -216,9 +194,6 @@ public class ChatController {
 
     /**
      * 获取某个会话的聊天记录
-     *
-     * @param sessionId
-     * @return
      */
     @GetMapping("/chat/getSessionChatRecord/{sessionId}")
     public ReturnResult getSessionChatRecord(@PathVariable Integer sessionId) {
@@ -227,12 +202,10 @@ public class ChatController {
 
     /**
      * 清空会话的聊天记录
-     * @param sessionId
-     * @return
      */
     @PutMapping("/chat/truncateSessionChatRecord/{sessionId}")
-    public ReturnResult truncateSessionChatRecord(@PathVariable Integer sessionId){
-        if(sessionId == null){
+    public ReturnResult truncateSessionChatRecord(@PathVariable Integer sessionId) {
+        if (sessionId == null) {
             return ReturnResult.error().codeAndMessage(ResultCode.EMPTY_PARAM);
         }
 
@@ -243,12 +216,10 @@ public class ChatController {
 
     /**
      * 删除会话
-     * @param sessionId
-     * @return
      */
     @DeleteMapping("/chat/deleteSession/{sessionId}")
-    public ReturnResult deleteSession(@PathVariable Integer sessionId){
-        if(sessionId == null){
+    public ReturnResult deleteSession(@PathVariable Integer sessionId) {
+        if (sessionId == null) {
             return ReturnResult.error().codeAndMessage(ResultCode.EMPTY_PARAM);
         }
 
@@ -260,8 +231,6 @@ public class ChatController {
 
     /**
      * 查询openai apikey的余额
-     * @param apiKey
-     * @return
      */
     @GetMapping("/chat/getCreditGrants/{apiKey}")
     public ReturnResult getCreditGrants(@PathVariable String apiKey) {
@@ -271,11 +240,6 @@ public class ChatController {
 
     /**
      * 把当前会话的聊天记录输出为csv文件
-     *
-     * @param
-     * @return
-     * @Arthor: oujiajun
-     * @Date: 2023/4/7 11:00
      */
     @GetMapping(value = "/chat/getSessionChatRecordByCsv/{sessionId}")
     public ReturnResult getSessionChatRecordByCsv(@PathVariable Integer sessionId, HttpServletResponse response) {
@@ -284,9 +248,9 @@ public class ChatController {
         List<SessionChatRecordEntity> sessionRecord = sessionChatRecordService.getSessionRecord(sessionId);
 
         // 转换成csv文件
-        String[] titleRow = {"角色", "内容" , "token数量", "创建时间", "更新时间"};
+        String[] titleRow = {"角色", "内容", "token数量", "创建时间", "更新时间"};
         List<String[]> sessionList = null;
-        if (!CollectionUtils.isEmpty(sessionRecord)){
+        if (!CollectionUtils.isEmpty(sessionRecord)) {
             sessionList = sessionRecord.stream()
                     .map(record -> new String[]{
                             record.getRole(),
@@ -302,10 +266,7 @@ public class ChatController {
     }
 
     /**
-     *  通过语音文件获取文字
-     * @param file
-     * @return
-     * @throws IOException
+     * 通过语音文件获取文字
      */
     @PostMapping("/chat/getTextByAudio")
     public ReturnResult getTextByAudio(@RequestBody MultipartFile file) throws IOException {
@@ -316,16 +277,14 @@ public class ChatController {
 
     /**
      * 百度语音识别权限认证
-     * @return
-     * @throws IOException
      */
     @PostMapping("/chat/getAudioToken")
     public ReturnResult getAudioToken() throws IOException {
         OkHttpClient client = OkHttpClientUtil.getClient();
         okhttp3.RequestBody body = okhttp3.RequestBody.create(MediaType.parse(CONTENT_TYPE_JSON), "");
         Request request = new Request.Builder()
-                .url("https://aip.baidubce.com/oauth/2.0/token?client_id="+ BaiDuConst.API_KEY +"&client_secret="
-                        +BaiDuConst.SECRET_KEY+"&grant_type=client_credentials")
+                .url("https://aip.baidubce.com/oauth/2.0/token?client_id=" + BaiDuConst.API_KEY + "&client_secret="
+                        + BaiDuConst.SECRET_KEY + "&grant_type=client_credentials")
                 .method("POST", body)
                 .addHeader("Content-Type", CONTENT_TYPE_JSON)
                 .addHeader("Accept", CONTENT_TYPE_JSON)

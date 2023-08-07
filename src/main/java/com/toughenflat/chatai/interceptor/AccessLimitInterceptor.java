@@ -14,7 +14,7 @@ import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 @Slf4j
-public class AccessLimitInterceptor  implements HandlerInterceptor {
+public class AccessLimitInterceptor implements HandlerInterceptor {
     private final RedisTemplate<String, Object> redisTemplate;
 
     public AccessLimitInterceptor(RedisTemplate<String, Object> redisTemplate) {
@@ -55,31 +55,31 @@ public class AccessLimitInterceptor  implements HandlerInterceptor {
         String ip = request.getRemoteAddr();
         String lockKey = LOCK_PREFIX + ip + uri;
         Object isLock = redisTemplate.opsForValue().get(lockKey);
-        if(Objects.isNull(isLock)){
+        if (Objects.isNull(isLock)) {
             // 还未被禁用
             String countKey = COUNT_PREFIX + ip + uri;
             Object count = redisTemplate.opsForValue().get(countKey);
-            if(Objects.isNull(count)){
+            if (Objects.isNull(count)) {
                 // 首次访问
-                log.info("首次访问,uri{},ip{}",uri,ip);
-                redisTemplate.opsForValue().set(countKey,1,minute, TimeUnit.MINUTES);
-            }else{
+                log.info("首次访问,uri{},ip{}", uri, ip);
+                redisTemplate.opsForValue().set(countKey, 1, minute, TimeUnit.MINUTES);
+            } else {
                 // 此用户前一点时间就访问过该接口
-                if((Integer)count < times){
+                if ((Integer) count < times) {
                     // 放行，访问次数 + 1
                     redisTemplate.opsForValue().increment(countKey);
-                }else{
-                    log.info("{}禁用访问{}",ip, uri);
+                } else {
+                    log.info("{}禁用访问{}", ip, uri);
                     // 禁用
-                    redisTemplate.opsForValue().set(lockKey, 1,lockTime, TimeUnit.MINUTES);
+                    redisTemplate.opsForValue().set(lockKey, 1, lockTime, TimeUnit.MINUTES);
                     // 删除统计
                     redisTemplate.delete(countKey);
-                    out(ReturnResult.error().message("5分钟内超过接口访问次数限制"),response);
+                    out(ReturnResult.error().message("5分钟内超过接口访问次数限制"), response);
                 }
             }
-        }else{
-//            // 此用户访问此接口已被禁用
-            out(ReturnResult.error().message("5分钟内超过接口访问次数限制"),response);
+        } else {
+            // 此用户访问此接口已被禁用
+            out(ReturnResult.error().message("5分钟内超过接口访问次数限制"), response);
             return false;
         }
         return true;

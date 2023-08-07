@@ -23,12 +23,6 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import javax.validation.Valid;
 
-/**
- * @Author : oujiajun
- * @Date: 2023/3/30
- * @Description: 翻译
- */
-
 @RestController
 @CrossOrigin
 @Slf4j
@@ -47,6 +41,7 @@ public class TranslationController {
 
     /**
      * 翻译
+     *
      * @param req
      * @return
      */
@@ -63,7 +58,7 @@ public class TranslationController {
         String apiKey = userApiKeyEntity != null && !StringUtils.isEmpty(userApiKeyEntity.getApikey())
                 ? userApiKeyEntity.getApikey()
                 : adminApiKeyService.roundRobinGetByType(ApiType.OPENAI);
-        if(apiKey == null){
+        if (apiKey == null) {
             return ReturnResult.error().codeAndMessage(ResultCode.ADMIN_APIKEY_NULL);
         }
 

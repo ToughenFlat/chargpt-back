@@ -472,9 +472,6 @@ public class FileChatServiceImpl implements FileChatService {
         return true;
     }
 
-
-
-
     /**
      *  文章转成向量
      * @param doc
