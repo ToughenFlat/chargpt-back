@@ -3752,3 +3752,97 @@ java.lang.IllegalArgumentException: Invalid character found in method name. HTTP
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2023-08-07 21:41:56.176 [SpringContextShutdownHook] INFO 
                 com.toughenflat.chatai.websocket.WebSocketServer - [连接ID:89bbbfc4_0189_bbbfc461_402881db_0000] 断开连接, 当前连接数:0
+2023-08-07 22:34:23.626 [main] INFO 
+                com.toughenflat.chatai.ChatAiApplication - Starting ChatAiApplication on WIN-4HIBGFKV5FD with PID 20748 (C:\Users\Administrator\Desktop\HBuilderProjects\chatgpt-back\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\chatgpt-back)
+2023-08-07 22:34:23.630 [main] INFO 
+                com.toughenflat.chatai.ChatAiApplication - The following profiles are active: dev
+2023-08-07 22:34:26.036 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-08-07 22:34:26.041 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-08-07 22:34:26.163 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77ms. Found 0 repository interfaces.
+2023-08-07 22:34:26.852 [main] INFO 
+                o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-07 22:34:27.999 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-08-07 22:34:28.027 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-08-07 22:34:28.028 [main] INFO 
+                org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-07 22:34:28.028 [main] INFO 
+                org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2023-08-07 22:34:28.311 [main] INFO 
+                o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-07 22:34:28.311 [main] INFO 
+                org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4564 ms
+2023-08-07 22:34:29.267 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-07 22:34:32.218 [main] INFO 
+                org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2023-08-07 22:34:32.233 [main] INFO 
+                o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-08-07 23:07:28.402 [main] INFO 
+                com.toughenflat.chatai.ChatAiApplication - Starting ChatAiApplication on WIN-4HIBGFKV5FD with PID 20572 (C:\Users\Administrator\Desktop\HBuilderProjects\chatgpt-back\target\classes started by Administrator in C:\Users\Administrator\Desktop\HBuilderProjects\chatgpt-back)
+2023-08-07 23:07:28.404 [main] INFO 
+                com.toughenflat.chatai.ChatAiApplication - The following profiles are active: dev
+2023-08-07 23:07:29.804 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-08-07 23:07:29.808 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-08-07 23:07:29.887 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52ms. Found 0 repository interfaces.
+2023-08-07 23:07:30.334 [main] INFO 
+                o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-07 23:07:31.010 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-08-07 23:07:31.031 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-08-07 23:07:31.032 [main] INFO 
+                org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-07 23:07:31.032 [main] INFO 
+                org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2023-08-07 23:07:31.210 [main] INFO 
+                o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-07 23:07:31.210 [main] INFO 
+                org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2726 ms
+2023-08-07 23:07:31.720 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-07 23:07:33.427 [main] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-07 23:07:34.192 [main] INFO 
+                com.toughenflat.chatai.config.FunAiConfig - 创建一个线程池 corePoolSize is [15] maxPoolSize is [1024]  queueCapacity is [100] keepAliveSeconds is [100] namePrefix is [async-service-].
+2023-08-07 23:07:34.194 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'queueThreadPool'
+2023-08-07 23:07:36.125 [main] INFO 
+                s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-08-07 23:07:36.820 [main] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-08-07 23:07:36.927 [main] INFO 
+                s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-08-07 23:07:36.952 [main] INFO 
+                s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-08-07 23:07:37.052 [main] INFO 
+                s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-08-07 23:07:37.341 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addSessionUsingPOST_1
+2023-08-07 23:07:37.480 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2023-08-07 23:07:37.482 [main] INFO 
+                s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getSseEmitterUsingGET_1
+2023-08-07 23:07:37.615 [main] INFO 
+                org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-08-07 23:07:37.695 [main] INFO 
+                o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-08-07 23:07:37.699 [main] INFO 
+                com.toughenflat.chatai.ChatAiApplication - Started ChatAiApplication in 10.145 seconds (JVM running for 15.955)
+2023-08-07 23:07:50.368 [SpringContextShutdownHook] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2023-08-07 23:07:50.373 [SpringContextShutdownHook] INFO 
+                o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'queueThreadPool'
+2023-08-07 23:07:50.374 [SpringContextShutdownHook] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-08-07 23:07:50.433 [SpringContextShutdownHook] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
