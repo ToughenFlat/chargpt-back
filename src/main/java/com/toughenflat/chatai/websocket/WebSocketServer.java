@@ -47,11 +47,17 @@ import java.util.concurrent.CopyOnWriteArraySet;
 public class WebSocketServer {
     private static final String AUTHORIZATION_STR = "Authorization";
 
+    private static AdminApiKeyService adminApiKeyService;
     @Resource
-    private AdminApiKeyService adminApiKeyService;
+    public void  setAdminApiKeyService(AdminApiKeyService adminApiKeyService) {
+        WebSocketServer.adminApiKeyService = adminApiKeyService;
+    }
 
+    private static UserApiKeyService userApiKeyService;
     @Resource
-    private UserApiKeyService userApiKeyService;
+    public void  setUserApiKeyService(UserApiKeyService userApiKeyService) {
+        WebSocketServer.userApiKeyService = userApiKeyService;
+    }
 
     // 在线总数
     private static int onlineCount;
