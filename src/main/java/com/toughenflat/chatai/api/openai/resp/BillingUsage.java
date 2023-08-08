@@ -8,11 +8,6 @@ import lombok.ToString;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-/**
- * @Author: huangpenglong
- * @Date: 2023/4/26 9:01
- */
-
 @Data
 @ToString
 @AllArgsConstructor

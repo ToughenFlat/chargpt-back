@@ -1,9 +1,5 @@
 package com.toughenflat.chatai.global.constant;
 
-/**
- * @Author: huangpenglong
- * @Date: 2023/4/12 10:15
- */
 public class TimeInterval {
 
     public static final long ZERO = 0L;

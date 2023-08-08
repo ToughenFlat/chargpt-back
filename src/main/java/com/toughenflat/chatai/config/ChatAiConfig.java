@@ -13,15 +13,10 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import java.util.concurrent.ThreadPoolExecutor;
 
-/**
- * @Author: huangpenglong
- * @Date: 2023/3/9 10:41
- */
-
 @Configuration
 @EnableTransactionManagement
 @Slf4j
-public class FunAiConfig {
+public class ChatAiConfig {
 
     /**
      * 分页插件
@@ -44,7 +39,7 @@ public class FunAiConfig {
         executor.setMaxPoolSize(1024);
         // 设置队列容量
         executor.setQueueCapacity(100);
-        // 设置线程活跃时间（秒）
+        // 设置线程活跃时间 (秒)
         executor.setKeepAliveSeconds(100);
         // 设置默认线程名称
         executor.setThreadNamePrefix("async-service-");
