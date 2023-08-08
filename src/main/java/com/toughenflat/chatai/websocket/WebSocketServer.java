@@ -51,9 +51,6 @@ public class WebSocketServer {
     private AdminApiKeyService adminApiKeyService;
 
     @Resource
-    private PromptService promptService;
-
-    @Resource
     private UserApiKeyService userApiKeyService;
 
     // 在线总数
@@ -136,6 +133,7 @@ public class WebSocketServer {
                 .stream(true)
                 .build();
         // 若用户上传了apikey则使用用户的，否则采用本系统的
+        log.info("UserApiKeyService: {}", userApiKeyService);
         UserApiKeyEntity userApiKeyEntity = userApiKeyService.getByUserIdAndType(uid, ApiType.OPENAI);
         String apiKey = userApiKeyEntity != null && !StringUtils.isEmpty(userApiKeyEntity.getApikey())
                 ? userApiKeyEntity.getApikey()
